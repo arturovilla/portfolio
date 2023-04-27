@@ -16,26 +16,26 @@ function Navbar() {
           <div className='hidden sm:flex'>
             <ul className='flex text-white'>
               <Link href="#">
-                <li className='ml-10 hover:border-b text-lg py-1'>Mission</li>
+                <li className='ml-10 hover:border-b text-lg py-1'>About</li>
               </Link>
               <Link href="#">
-                <li className='ml-10 hover:border-b text-lg py-1'>Product</li>
+                <li className='ml-10 hover:border-b text-lg py-1'>Work</li>
               </Link>
               <Link href="#">
-                <li className='ml-10 hover:border-b text-lg py-1'>Values</li>
+                <li className='ml-10 hover:border-b text-lg py-1'>Blog</li>
               </Link>
               <Link href="#">
-                <li className='ml-10 hover:border-b text-lg py-1'>Pre-Register</li>
+                <li className='ml-10 hover:border-b text-lg py-1'>Newsletter</li>
               </Link>
               <Link href="#">
-                <li className='ml-10 hover:border-b text-lg py-1'>Contact</li>
+                <li className='ml-10 text-lg py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out'>Contact</li>
               </Link>
             </ul>
           </div>
           {/* mobile menu icon*/}
           <div className='sm:hidden flex justify-between items-center h-full w-full'>
             <Link href="#">
-                <p className='text-lg text-white px-5  rounded-md border border-white hover:bg-white hover:text-black hover:shadow-lg hover:shadow-yellow-300 transition duration-150 ease-in-out'>Contact</p>
+                <p className='text-lg text-white px-5  rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out'>Contact</p>
             </Link>
             <div onClick={handleNav} className='sm:hidden pl-20 cursor-pointer '> 
               <AiOutlineMenu size={25} color='white'/>
