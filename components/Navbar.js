@@ -1,6 +1,8 @@
-import Head from 'next/head';
+
 import Link from 'next/link';
 import { useState } from 'react';
+
+
 import {AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineFacebook, AiOutlineTwitter} from 'react-icons/ai'
 // import SiTiktok from 'react-icons/si'
 
@@ -13,25 +15,26 @@ function Navbar() {
 
     <nav className='fixed w-full h-24 '>
         <div className='flex justify-center items-center h-full w-full px-4 2xl:px-16'>
-          <div className='hidden sm:flex'>
-            <ul className='flex text-white'>
-              <Link href="#">
-                <li className='ml-10 hover:border-b text-lg py-1'>About</li>
-              </Link>
-              <Link href="#">
-                <li className='ml-10 hover:border-b text-lg py-1'>Work</li>
-              </Link>
-              <Link href="#">
-                <li className='ml-10 hover:border-b text-lg py-1'>Blog</li>
-              </Link>
-              <Link href="#">
-                <li className='ml-10 hover:border-b text-lg py-1'>Newsletter</li>
-              </Link>
-              <Link href="#">
-                <li className='ml-10 text-lg py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out'>Contact</li>
-              </Link>
-            </ul>
-          </div>
+            
+            <div className='hidden sm:flex'>
+                    <ul className='flex text-white'>
+                    <Link href="#">
+                        <li className='ml-10 hover:border-b text-lg py-1'>About</li>
+                    </Link>
+                    <Link href="#">
+                        <li className='ml-10 hover:border-b text-lg py-1'>Work</li>
+                    </Link>
+                    <Link href="#">
+                        <li className='ml-10 hover:border-b text-lg py-1'>Blog</li>
+                    </Link>
+                    <Link href="#">
+                        <li className='ml-10 hover:border-b text-lg py-1'>Newsletter</li>
+                    </Link>
+                    <Link href="#">
+                        <li className='ml-10 text-lg py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out'>Contact</li>
+                    </Link>
+                    </ul>
+            </div>
           {/* mobile menu icon*/}
           <div className='sm:hidden flex justify-between items-center h-full w-full'>
             <Link href="#">
