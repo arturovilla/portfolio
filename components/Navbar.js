@@ -1,7 +1,8 @@
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
-
+import Renderedlogo from '../public/rendert2.gif'
 
 import {AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineFacebook, AiOutlineTwitter} from 'react-icons/ai'
 // import SiTiktok from 'react-icons/si'
@@ -13,28 +14,35 @@ function Navbar() {
   }
   return (
 
-    <nav className='fixed w-full h-24 '>
-        <div className='flex justify-center items-center h-full w-full px-4 2xl:px-16'>
-            
-            <div className='hidden sm:flex'>
-                    <ul className='flex text-white'>
-                    <Link href="#">
-                        <li className='ml-10 hover:border-b text-lg py-1'>About</li>
-                    </Link>
-                    <Link href="#">
-                        <li className='ml-10 hover:border-b text-lg py-1'>Work</li>
-                    </Link>
-                    <Link href="#">
-                        <li className='ml-10 hover:border-b text-lg py-1'>Blog</li>
-                    </Link>
-                    <Link href="#">
-                        <li className='ml-10 hover:border-b text-lg py-1'>Newsletter</li>
-                    </Link>
-                    <Link href="#">
-                        <li className='ml-10 text-lg py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out'>Contact</li>
-                    </Link>
-                    </ul>
-            </div>
+    <nav className='fixed w-full h-32 py-28 bg-red-400'>
+        <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16 bg-purple-500'>
+          <div>
+            <Image
+            src={Renderedlogo}
+            alt="image of the blyss dating logo"
+            className="cursor-pointer"
+            width="auto"
+            height="300"/>
+          </div>
+          <div className='hidden sm:flex'>
+            <ul className='flex text-white'>
+            <Link href="#">
+                <li className='ml-10 hover:border-b text-lg py-1'>About</li>
+            </Link>
+            <Link href="#">
+                <li className='ml-10 hover:border-b text-lg py-1'>Work</li>
+            </Link>
+            <Link href="#">
+                <li className='ml-10 hover:border-b text-lg py-1'>Blog</li>
+            </Link>
+            <Link href="#">
+                <li className='ml-10 hover:border-b text-lg py-1'>Newsletter</li>
+            </Link>
+            <Link href="#">
+                <li className='ml-10 text-lg py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out'>Contact</li>
+            </Link>
+            </ul>
+          </div>
           {/* mobile menu icon*/}
           <div className='sm:hidden flex justify-between items-center h-full w-full'>
             <Link href="#">
