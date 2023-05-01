@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        druk: ['var(--font-Druk-bold)']
+      }
     },
   },
   plugins: [],

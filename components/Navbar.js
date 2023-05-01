@@ -7,6 +7,8 @@ import Renderedlogo from '../public/rendert2.gif'
 import {AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineFacebook, AiOutlineTwitter} from 'react-icons/ai'
 // import SiTiktok from 'react-icons/si'
 
+
+
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const handleNav = () =>{
@@ -14,9 +16,9 @@ function Navbar() {
   }
   return (
 
-    <nav className='fixed w-full h-32 py-28 bg-red-400'>
-        <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16 bg-purple-500'>
-          <div>
+    <nav className='fixed w-full h-32  '>
+        <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16 py-24 md:py-32'>
+          <div className=''>
             <Image
             src={Renderedlogo}
             alt="image of the blyss dating logo"
@@ -44,10 +46,8 @@ function Navbar() {
             </ul>
           </div>
           {/* mobile menu icon*/}
-          <div className='sm:hidden flex justify-between items-center h-full w-full'>
-            <Link href="#">
-                <p className='text-lg text-white px-5  rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out'>Contact</p>
-            </Link>
+          <div className='sm:hidden flex justify-end items-center h-full w-full'>
+            
             <div onClick={handleNav} className='sm:hidden pl-20 cursor-pointer '> 
               <AiOutlineMenu size={25} color='white'/>
             </div>
