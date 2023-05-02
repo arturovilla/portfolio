@@ -59,49 +59,54 @@ function Navbar() {
         {/* mobile menu */}
         <div className={
           menuOpen
-          ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-slate-200 p-10 ease-in duration-500"
+          ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-gray-900/70 backdrop-blur-md p-10 ease-in duration-500"
           : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
         }>
           {/* inside mobile menu */}
           <div className='flex w-full items-center justify-end'>
             <div onClick={handleNav} className='cursor-pointer'>
-              <AiOutlineClose size={20}/>
+              <AiOutlineClose size={20} color='white'/>
             </div>
           </div>
-          <div className='flex-col py-4'>
+          <div className='flex-col py-4 text-white'>
             <ul>
               <Link href="#">
                 <li
                 onClick={() => setMenuOpen(false)} 
-                className='ml-10 hover:border-b text-lg'>Mission</li>
+                className='ml-10 hover:border-b text-lg'>About</li>
               </Link>
               <Link href="#">
                 <li
                 onClick={() => setMenuOpen(false)} 
-                className='ml-10 hover:border-b text-lg'>Product</li>
+                className='ml-10 hover:border-b text-lg'>Work</li>
               </Link>
               <Link href="#">
                 <li
                 onClick={() => setMenuOpen(false)} 
-                className='ml-10 hover:border-b text-lg'>Values</li>
+                className='ml-10 hover:border-b text-lg'>Blog</li>
               </Link>
               <Link href="#">
                 <li
                 onClick={() => setMenuOpen(false)} 
-                className='ml-10 hover:border-b text-lg'>Pre-Register</li>
+                className='ml-10 hover:border-b text-lg'>Newsletter</li>
               </Link>
               <Link href="#">
                 <li
                 onClick={() => setMenuOpen(false)} 
-                className='ml-10 hover:border-b text-lg'>Contact Us</li>
+                className='ml-10 hover:border-b text-lg'>Resume</li>
+              </Link>
+              <Link href="#">
+                <li
+                onClick={() => setMenuOpen(false)} 
+                className='ml-10 hover:border-b text-lg'>Contact</li>
               </Link>
             </ul>
           </div>
           {/* socials, legal, and other links inside the mobile menu */}
           <div className='flex flex-row justify-around pt-10 items-center'>
-            <AiOutlineFacebook size={30} className='cursor-pointer'/>
-            <AiOutlineInstagram size={30} className='cursor-pointer'/>
-            <AiOutlineTwitter size={30} className='cursor-pointer'/>
+            <AiOutlineFacebook size={30} className='cursor-pointer' color='white'/>
+            <AiOutlineInstagram size={30} className='cursor-pointer' color='white'/>
+            <AiOutlineTwitter size={30} className='cursor-pointer' color='white'/>
             {/* <SiTiktok size={30} className='cursor-pointer'/> */}
           </div>
         </div>
