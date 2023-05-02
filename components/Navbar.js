@@ -41,6 +41,9 @@ function Navbar() {
                 <li className='ml-10 hover:border-b text-lg py-1'>Newsletter</li>
             </Link>
             <Link href="#">
+                <li className='ml-10 hover:border-b text-lg py-1'>Resume</li>
+            </Link>
+            <Link href="#">
                 <li className='ml-10 text-lg py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out'>Contact</li>
             </Link>
             </ul>
