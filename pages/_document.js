@@ -1,7 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
 
-const themecolor = '#05050E' 
+const themecolor = '#0C0D1C' 
 
 export default function Document() {
   return (
@@ -12,7 +12,7 @@ export default function Document() {
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
       <link rel="manifest" href="/site.webmanifest"/>
       <meta name="theme-color" content={themecolor}></meta>
-      <body className='bg-[#05050E]'>
+      <body className='bg-[#0C0D1C]'>
         <Main />
         <NextScript />
       </body>

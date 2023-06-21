@@ -38,10 +38,10 @@ function Navbar() {
                 <li className='ml-10 hover:border-b text-lg py-1'>Blog</li>
             </Link>
             <Link href="#">
-                <li className='ml-10 hover:border-b text-lg py-1'>Newsletter</li>
+                <li className='ml-10 hover:border-b text-lg py-1'>Resume</li>
             </Link>
             <Link href="#">
-                <li className='ml-10 hover:border-b text-lg py-1'>Resume</li>
+                <li className='ml-10 hover:border-b text-lg py-1'>Newsletter</li>
             </Link>
             <Link href="#">
                 <li className='ml-10 text-lg py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out'>Contact</li>
@@ -104,7 +104,6 @@ function Navbar() {
           </div>
           {/* socials, legal, and other links inside the mobile menu */}
           <div className='flex flex-row justify-around pt-10 items-center'>
-            <AiOutlineFacebook size={30} className='cursor-pointer' color='white'/>
             <AiOutlineInstagram size={30} className='cursor-pointer' color='white'/>
             <AiOutlineTwitter size={30} className='cursor-pointer' color='white'/>
             {/* <SiTiktok size={30} className='cursor-pointer'/> */}
