@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className=''>
 
-      <Navbar/>
+      {/* <Navbar/> */}
 
       <div className='pt-48'>
         <Landing/>

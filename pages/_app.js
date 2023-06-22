@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar'
 import '@/styles/globals.css'
 import localFont from 'next/font/local'
 
@@ -10,6 +11,7 @@ const Druk = localFont({
 export default function App({ Component, pageProps }) {
   return (
     <main className={`${Druk.variable}`}>
+      <Navbar/>
       <Component {...pageProps} />
     </main>
   )

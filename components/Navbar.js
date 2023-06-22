@@ -1,7 +1,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Renderedlogo from '../public/rendert2.gif'
 
 import {AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineFacebook, AiOutlineTwitter} from 'react-icons/ai'
@@ -14,21 +14,45 @@ function Navbar() {
   const handleNav = () =>{
     setMenuOpen(!menuOpen)
   }
+
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true)
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY
+
+    if(currentScrollPos > prevScrollPos){
+        setVisible(false)
+    }else{
+        setVisible(true)
+    }
+
+    setPrevScrollPos(currentScrollPos)
+  }
+  useEffect( () => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  })
+
+  /////////////////////////////////////////////
   return (
 
-    <nav className='fixed w-full h-32  '>
+    <nav className={`sticky w-full h-32  ${visible ? 'top-0' : ''} `}>
         <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16 py-24 md:py-32'>
           <div className=''>
-            <Image
-            src={Renderedlogo}
-            alt="image of the blyss dating logo"
-            className="cursor-pointer"
-            width="auto"
-            height="300"/>
+            <Link href="/">
+              <Image
+              src={Renderedlogo}
+              alt="spinning gif saying a.dev"
+              className="cursor-pointer"
+              width="auto"
+              height="300"/>
+            </Link>
           </div>
           <div className='hidden sm:flex'>
             <ul className='flex text-white'>
-            <Link href="#">
+            <Link href="/">
                 <li className='ml-10 hover:border-b text-lg py-1'>About</li>
             </Link>
             <Link href="#">
@@ -37,7 +61,7 @@ function Navbar() {
             <Link href="#">
                 <li className='ml-10 hover:border-b text-lg py-1'>Blog</li>
             </Link>
-            <Link href="#">
+            <Link href="/resume">
                 <li className='ml-10 hover:border-b text-lg py-1'>Resume</li>
             </Link>
             <Link href="#">
