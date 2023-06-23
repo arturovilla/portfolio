@@ -52,9 +52,7 @@ function Navbar() {
           </div>
           <div className='hidden sm:flex'>
             <ul className='flex text-white'>
-            <Link href="/">
-                <li className='ml-10 hover:border-b text-lg py-1'>About</li>
-            </Link>
+            
             <Link href="#">
                 <li className='ml-10 hover:border-b text-lg py-1'>Work</li>
             </Link>
@@ -63,9 +61,6 @@ function Navbar() {
             </Link>
             <Link href="/resume">
                 <li className='ml-10 hover:border-b text-lg py-1'>Resume</li>
-            </Link>
-            <Link href="#">
-                <li className='ml-10 hover:border-b text-lg py-1'>Newsletter</li>
             </Link>
             <Link href="#">
                 <li className='ml-10 text-lg py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out'>Contact</li>
@@ -94,11 +89,7 @@ function Navbar() {
           </div>
           <div className='flex-col py-4 text-white'>
             <ul>
-              <Link href="#">
-                <li
-                onClick={() => setMenuOpen(false)} 
-                className='ml-10 hover:border-b text-lg'>About</li>
-              </Link>
+              
               <Link href="#">
                 <li
                 onClick={() => setMenuOpen(false)} 
@@ -109,11 +100,7 @@ function Navbar() {
                 onClick={() => setMenuOpen(false)} 
                 className='ml-10 hover:border-b text-lg'>Blog</li>
               </Link>
-              <Link href="#">
-                <li
-                onClick={() => setMenuOpen(false)} 
-                className='ml-10 hover:border-b text-lg'>Newsletter</li>
-              </Link>
+            
               <Link href="#">
                 <li
                 onClick={() => setMenuOpen(false)} 

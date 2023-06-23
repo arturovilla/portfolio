@@ -13,12 +13,6 @@ export default function Home() {
   return (
     <div className=''>
 
-      {/* <Navbar/> */}
-
-      <div className='pt-48'>
-        <Landing/>
-      </div>
-
       <div className='mt-96'>
         <About/>
       </div>

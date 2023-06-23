@@ -15,8 +15,8 @@ function Resume() {
     <div className='flex justify-center text-center mt-32 mb-48'>
 
         <div className='text-[#E4DFDB] font-serif flex-col items-center w-11/12 md:w-4/5 max-w-5xl'>
-            <div className='mb-5'>
-                <button onClick={() => download(fileUrl, filename)} className=' text-lg py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out'> Download PDF</button>
+            <div className='mb-5 font-sans'>
+                <button onClick={() => download(fileUrl, filename)} className=' text-lg py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out'>Download PDF</button>
             </div>
 
             <div className='bg-[#2E2B35] px-3 py-2 rounded-md'>
