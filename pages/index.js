@@ -17,7 +17,7 @@ export default function Home() {
         <About/>
       </div>
 
-      <div className='mt-96 flex justify-center flex-col items-center'>
+      <div className='mt-96 flex justify-center flex-col items-center '>
         <Newsletter/>
       </div>
 
