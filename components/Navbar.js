@@ -4,12 +4,13 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import Renderedlogo from '../public/rendert2.gif'
 
-import {AiOutlineMenu, AiOutlineClose, AiOutlineInstagram, AiOutlineFacebook, AiOutlineTwitter} from 'react-icons/ai'
-// import SiTiktok from 'react-icons/si'
+import {AiOutlineMenu, AiOutlineClose, AiOutlineLinkedin, AiOutlineGithub, AiOutlineMail} from 'react-icons/ai'
+
 
 
 
 function Navbar() {
+  const email = 'artuvillam@gmail.com'
   const [menuOpen, setMenuOpen] = useState(false)
   const handleNav = () =>{
     setMenuOpen(!menuOpen)
@@ -56,9 +57,7 @@ function Navbar() {
             <Link href="#">
                 <li className='ml-10 hover:border-b text-lg py-1'>Work</li>
             </Link>
-            <Link href="#">
-                <li className='ml-10 hover:border-b text-lg py-1'>Blog</li>
-            </Link>
+            
             <Link href="/resume">
                 <li className='ml-10 hover:border-b text-lg py-1'>Resume</li>
             </Link>
@@ -78,46 +77,47 @@ function Navbar() {
         {/* mobile menu */}
         <div className={
           menuOpen
-          ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-gray-900/70 backdrop-blur-md p-10 ease-in duration-500"
+          ? "fixed left-0 top-0 w-[100%] sm:hidden h-screen bg-gray-900/70 backdrop-blur-md p-10 ease-in duration-500"
           : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
         }>
           {/* inside mobile menu */}
-          <div className='flex w-full items-center justify-end'>
+          <div className='flex w-full items-center justify-end '>
             <div onClick={handleNav} className='cursor-pointer'>
               <AiOutlineClose size={20} color='white'/>
             </div>
           </div>
-          <div className='flex-col py-4 text-white'>
+          <div className='flex-col items-center text-center text-5xl py-4 text-white'>
             <ul>
+              <Link href="#">
+                <li
+                onClick={() => setMenuOpen(false)} 
+                className='hover:border-b pt-10'>Work</li>
+              </Link>
               
-              <Link href="#">
-                <li
-                onClick={() => setMenuOpen(false)} 
-                className='ml-10 hover:border-b text-lg'>Work</li>
-              </Link>
-              <Link href="#">
-                <li
-                onClick={() => setMenuOpen(false)} 
-                className='ml-10 hover:border-b text-lg'>Blog</li>
-              </Link>
             
-              <Link href="#">
+              <Link href="/resume">
                 <li
                 onClick={() => setMenuOpen(false)} 
-                className='ml-10 hover:border-b text-lg'>Resume</li>
+                className=' hover:border-b pt-10'>Resume</li>
               </Link>
               <Link href="#">
                 <li
                 onClick={() => setMenuOpen(false)} 
-                className='ml-10 hover:border-b text-lg'>Contact</li>
+                className='hover:border-b pt-10'>Contact</li>
               </Link>
             </ul>
           </div>
           {/* socials, legal, and other links inside the mobile menu */}
-          <div className='flex flex-row justify-around pt-10 items-center'>
-            <AiOutlineInstagram size={30} className='cursor-pointer' color='white'/>
-            <AiOutlineTwitter size={30} className='cursor-pointer' color='white'/>
-            {/* <SiTiktok size={30} className='cursor-pointer'/> */}
+          <div className='flex flex-row justify-around pt-52 items-center'>
+            <a href='https://www.linkedin.com/in/rtvro/' target="_blank">
+              <AiOutlineLinkedin size={40} className='cursor-pointer' color='white'/>
+            </a>
+            <a href='https://github.com/arturovilla' target="_blank">
+              <AiOutlineGithub size={40} className='cursor-pointer' color='white'/>
+            </a>
+            <a href={`mailto:${email}`}>
+              <AiOutlineMail size={40} className='cursor-pointer' color='white'/>
+            </a>
           </div>
         </div>
     </nav>

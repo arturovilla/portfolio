@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 import '@/styles/globals.css'
 import localFont from 'next/font/local'
 
@@ -13,6 +14,9 @@ export default function App({ Component, pageProps }) {
     <main className={`${Druk.variable}`}>
       <Navbar/>
       <Component {...pageProps} />
+      <div className='mt-40'>
+        <Footer/>
+      </div>
     </main>
   )
 }

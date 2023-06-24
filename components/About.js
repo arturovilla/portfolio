@@ -5,7 +5,7 @@ import parse from 'html-react-parser';
 function About() {
     const words = [
         "<span className='font-extrabold italic' >Arturo Villalobos </span>", 
-        "<span className='font-extrabold italic' >a Software Engineer 👨🏻‍💻</span>", 
+        "<span className='font-extrabold italic' >a Software Engr 👨🏻‍💻</span>", 
         "<span className='font-extrabold italic' >a Data Visualizer 📊</span>", 
         "<span className='font-extrabold italic' >a Graphic Designer 👨🏼‍🎨</span>",
         "<span className='font-extrabold italic' >a Tech Consultant 🧑🏻‍🏫</span>" ]
