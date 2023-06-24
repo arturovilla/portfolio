@@ -12,7 +12,7 @@ function About() {
 
     const [index, setIndex] = useState(0);
     useEffect(() => {
-        const intervalDelayMilliseconds = words[index].length * 15;
+        const intervalDelayMilliseconds = words[index].length * 10;
         const interval = setInterval(() => {
           setIndex((prevIndex) => {
             // reset index if current index is greater than array size

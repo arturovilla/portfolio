@@ -24,7 +24,8 @@
     "react-icons": "^4.8.0",
     "react-use-downloader": "^1.2.4",
     "tailwindcss": "3.3.2",
-    "three": "^0.152.0"
+    "three": "^0.152.0",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3"

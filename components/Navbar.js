@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import Renderedlogo from '../public/rendert2.gif'
+import staticLogo from '../public/0001.png'
 
 import {AiOutlineMenu, AiOutlineClose, AiOutlineLinkedin, AiOutlineGithub, AiOutlineMail} from 'react-icons/ai'
 
@@ -44,7 +44,7 @@ function Navbar() {
           <div className=''>
             <Link href="/">
               <Image
-              src={Renderedlogo}
+              src={staticLogo}
               alt="spinning gif saying a.dev"
               className="cursor-pointer"
               width="auto"
@@ -54,14 +54,14 @@ function Navbar() {
           <div className='hidden sm:flex'>
             <ul className='flex text-white'>
             
-            <Link href="#">
+            <Link href="/work">
                 <li className='ml-10 hover:border-b text-lg py-1'>Work</li>
             </Link>
             
             <Link href="/resume">
                 <li className='ml-10 hover:border-b text-lg py-1'>Resume</li>
             </Link>
-            <Link href="#">
+            <Link href="/contact">
                 <li className='ml-10 text-lg py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out'>Contact</li>
             </Link>
             </ul>
