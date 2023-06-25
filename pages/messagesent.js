@@ -6,7 +6,7 @@ function Messagesent() {
 
 	return (
 		<div className="mt-48">
-			<div className="text-white">
+			<div className="text-white flex justify-center">
 				thank you for you email, {router.query.name}!
 			</div>
 		</div>
