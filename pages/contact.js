@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "next/router";
 
 function Contact() {
+	//loading state
+	const [loading, setloading] = useState(false);
+
 	// router
 	const router = useRouter();
 	// Formik logic
@@ -31,9 +34,32 @@ function Contact() {
 				.required("Message is required"),
 		}),
 		// submit form
-		onSubmit: (values) => {
+		onSubmit: async (values) => {
+			setloading(true);
 			console.log(values);
-			router.push({ pathname: "/messagesent", query: values });
+
+			// email post logic
+			const response = await fetch("/api/email", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(values),
+			});
+			if (response.ok) {
+				console.log("email was sent");
+				setloading(false);
+				// pushto other page
+				router.push({ pathname: "/messagesent", query: values });
+				// reset form
+				formik.values.name = "";
+				formik.values.subject = "";
+				formik.values.email = "";
+				formik.values.message = "";
+			} else if (!response.ok) {
+				console.log("ERR: problem with server");
+				setloading(false);
+			}
 		},
 	});
 
@@ -158,8 +184,9 @@ function Contact() {
 				</div>
 				<div className="text-white flex justify-center">
 					<button
-						className="py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out"
+						className="disabled:bg-slate-400 disabled:text-gray-600 py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out"
 						type="submit"
+						disabled={loading}
 					>
 						Send message
 					</button>
