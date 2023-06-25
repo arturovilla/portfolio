@@ -55,6 +55,12 @@ function Navbar() {
 				</div>
 				<div className="hidden sm:flex">
 					<ul className="flex text-white">
+						<Link href="/">
+							<li className="ml-10 hover:border-b text-lg py-1">
+								Home
+							</li>
+						</Link>
+
 						<Link href="/work">
 							<li className="ml-10 hover:border-b text-lg py-1">
 								Work
@@ -99,7 +105,15 @@ function Navbar() {
 				</div>
 				<div className="flex-col items-center text-center text-5xl py-4 text-white">
 					<ul>
-						<Link href="#">
+						<Link href="/">
+							<li
+								onClick={() => setMenuOpen(false)}
+								className="hover:border-b pt-10"
+							>
+								Home
+							</li>
+						</Link>
+						<Link href="/work">
 							<li
 								onClick={() => setMenuOpen(false)}
 								className="hover:border-b pt-10"
