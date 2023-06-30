@@ -42,7 +42,7 @@ export async function getStaticProps() {
 
 function Work({ posts }) {
 	return (
-		<div className="mt-24 text-white flex flex-col items-center text-center justify-center">
+		<div className="mt-28 text-white flex flex-col items-center text-center justify-center">
 			<div className="text-4xl md:text-7xl font-bold mb-10">
 				Work, Projects, and Designs
 			</div>

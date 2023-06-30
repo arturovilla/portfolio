@@ -6,13 +6,12 @@ import { marked } from "marked";
 import Link from "next/link";
 
 export default function PostPage({
-	frontmatter: { title, date, cover_image, tags },
+	frontmatter: { title, date, cover_image },
 	content,
 	slug,
 }) {
-	console.log(tags);
 	return (
-		<div className="text-white mt-48 flex flex-col">
+		<div className="text-white mt-32 flex flex-col">
 			<img src={cover_image} />
 			<div className=" flex flex-col text-left w-4/6 mx-auto">
 				<h1 className="text-4xl md:text-7xl font-extrabold text-gruvred">
@@ -22,10 +21,13 @@ export default function PostPage({
 					{date}
 				</p>
 			</div>
-			<div className="prose lg:prose-2xl prose-pink mx-auto max-w-none w-4/6">
+			<div className="prose lg:prose-2xl prose-pink mx-auto max-w-none w-4/6 prose-img:rounded-xl prose-img:mx-auto">
 				<div
 					dangerouslySetInnerHTML={{
-						__html: marked(content),
+						__html: marked(content, {
+							mangle: false,
+							headerIds: false,
+						}),
 					}}
 				/>
 			</div>
