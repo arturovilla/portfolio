@@ -28,7 +28,7 @@ function About() {
 		<div className="">
 			<div className=" text-[#E4DFDB] flex flex-col">
 				<h1 className=" text-left pl-5 pr-5 md:text-8xl md:pl-11 text-6xl w-full px-0 mx-0">
-					Hi, I&apos;m{" "}
+					Hello, I&apos;m{" "}
 				</h1>
 				<span className=" transition-all text-left pl-5 pr-5 md:text-8xl md:pl-11 w-full px-0 mx-0">
 					{parse(words[index])}
