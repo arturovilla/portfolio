@@ -12,7 +12,7 @@ tags:
 
 ### Background
 
-Earlier this summer I was contracted by a new dating start-up to redesign their page to make it more mobile friendly and to redesign some assets that they have been using. At first I thought this would be an easy job , refactoring some things , although tedious would not be that tough and quite honestly I thought remaking the assets was the more interesting part of the contract.
+Earlier this summer I was contracted by a new dating start-up to redesign their page to make it more mobile friendly and to redesign some assets that they have been using. I was really excited about the project as it had a bit of everthing i wanted to do, some graphic design , some web-developement, and meeting new people along the way. What I didn't expect was the decision making process, with reguards to mobile components, being so consuming. As soon as I finished one section, another section was already misaligned.
 
 While some of the refactoring was tedious, using specific technologies like [Tailwind](https://tailwindcss.com) made the entire process much easier. As I learned from building my portfolio, using tailwind gives me as a developer the same flexibility as pure CSS but now with some excellent tooling and some guardrails to make sure the whole design is cohesive. Unlike other component based libraries for react like [MUI](https://mui.com/material-ui/getting-started/overview/), tailwind gives more flexibility.
 
