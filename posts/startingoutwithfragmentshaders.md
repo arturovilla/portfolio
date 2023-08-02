@@ -95,6 +95,6 @@ void main(){
 }
 ```
 
-| ![My Custom Shader](https://drive.google.com/uc?export=view&id=14ZVK4UXTLxTkHwb1pODjZgytCY6-zKu) |
-| :----------------------------------------------------------------------------------------------- |
-| _A fractal design that i am starting out with, we will see where it goes from here_              |
+| ![My Custom Shader](https://drive.google.com/uc?export=view&id=1ZAUl1ZhpPGbRBDmy2UFlHCm-S2Q_H2Er) |
+| :------------------------------------------------------------------------------------------------ |
+| _A fractal design that i am starting out with, we will see where it goes from here_               |
