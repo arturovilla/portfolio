@@ -277,6 +277,11 @@ whereIcontinously post interesting shader art and projects, for now ill insclude
 
 | ![Music Visualizer](https://drive.google.com/uc?export=view&id=1ca8_dEplhijZ81CSJAp-hgMsvWsPirfH)                         |
 | :------------------------------------------------------------------------------------------------------------------------ |
-| _This is the visulaizer. Note the the changing color pallete. I think thios song was Turn Off the Lights by Fred Again.._ |
+| _This is the Visualizer. Note the the changing color pallete. I think thios song was Turn Off the Lights by Fred Again.._ |
 
-[Git repo for the visualizer](https://github.com/arturovilla/musik-visualizer)
+Link to the Visualizer in Action:
+
+-   [Instagram](https://www.instagram.com/reel/Cv8-CYOArLH/?igshid=MTc4MmM1YmI2Ng%3D%3D)
+-   [Tiktok](https://www.tiktok.com/@bonbonassesino/video/7267041885359836458?_r=1&_t=8esDZyCQgik)
+
+[Git repo for the Visualizer](https://github.com/arturovilla/musik-visualizer)
