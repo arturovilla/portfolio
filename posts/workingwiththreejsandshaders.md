@@ -268,12 +268,12 @@ Each song is mastered differently and so the optimal range for iteration is diff
 
 ### Conclusion and Result
 
-In conclusion I think this was a very interesting excersise andIhave a few ideas to move forward.
-I have been interested of Electron andIam curious if there is a way to interate Webgl, Three.js, and election
+In conclusion I think this was a very interesting exercise and I have a few ideas to move forward.
+I have been interested of Electron and I am curious if there is a way to integrate Webgl, Three.js, and election
 to bundle together all these files and make a stand alone app that could be ran for show or parties.
 
-The result is a very big , not good for web, video, and instead of including it here ive linked below my instagram
-whereIcontinously post interesting shader art and projects, for now ill insclude a screenshot.
+The result is a very big , not good for web, video, and instead of including it here I've linked below my instagram
+where I continuously post interesting shader art and projects, for now ill include a screenshot.
 
 | ![Music Visualizer](https://drive.google.com/uc?export=view&id=1ca8_dEplhijZ81CSJAp-hgMsvWsPirfH)                         |
 | :------------------------------------------------------------------------------------------------------------------------ |
