@@ -10,9 +10,9 @@ tags:
     - Vercel
 ---
 
-### Techstack
+### Tech stack
 
-When I made my first portfolio the things I could make were very crude and the features I could implement were unuseful at best and hurtful to the user experience at worst. This is mostly due to my own inexperience. Back then I would make entire static web pages using pure HTML and CSS, I wouldn't pull data from a CDN or database, everything was hard coded, and I wasn't fully aware of what made a good design. (still am not but slowly getting there).
+When I made my first portfolio the things I could make were very crude and the features I could implement were useless at best and hurtful to the user experience at worst. This is mostly due to my own inexperience. Back then I would make entire static web pages using pure HTML and CSS, I wouldn't pull data from a CDN or database, everything was hard coded, and I wasn't fully aware of what made a good design. (still am not but slowly getting there).
 
 What also hindered my first couple portfolios was my ignorance of popular and useful web-technologies that, in combination with experience , could take my portfolios and the way I present myself to the next level.
 
@@ -76,4 +76,4 @@ Better yet, all unused css gets purged leading to smaller amounts of css getting
 | :------------------------------------------------------------------------------------------- |
 | _vs-code extension that shows you what css is being used for tailwind utility functions_     |
 
-Other functions like using [Nodemailer](https://nodemailer.com/about/) for the contact me page, using [Formik](https://formik.org) and [Yup](https://github.com/jquense/yup) as opposed to regular forms and validation, and using [Vercel](https://vercel.com/blog/what-is-vercel) and host the project are all pretty well documented at this point but I still may write separate posts about these specific topics in the future…
+Other functions like using [Node-mailer](https://nodemailer.com/about/) for the contact me page, using [Formik](https://formik.org) and [Yup](https://github.com/jquense/yup) as opposed to regular forms and validation, and using [Vercel](https://vercel.com/blog/what-is-vercel) and host the project are all pretty well documented at this point but I still may write separate posts about these specific topics in the future…
