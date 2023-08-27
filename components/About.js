@@ -26,15 +26,30 @@ function About() {
 
 	return (
 		<div className="">
-			<div className=" text-[#E4DFDB] flex flex-col">
+			<div className=" text-gruvred flex flex-col">
 				<h1 className=" text-left pl-5 pr-5 md:text-8xl md:pl-11 text-6xl w-full px-0 mx-0">
-					Hello, I&apos;m{" "}
+					Hello, I&apos;m
 				</h1>
 				<span className=" transition-all text-left pl-5 pr-5 md:text-8xl md:pl-11 w-full px-0 mx-0">
+					{/* <mark>{parse(words[index])}</mark> */}
 					{parse(words[index])}
 				</span>
 			</div>
-			<p className="text-left pl-5 text-[#E4DFDB] text-md w-2/3 md:text-2xl md:pl-11 md:w-1/2 ">
+			<div className="pt-5 pb-8 text-left pl-5 text-gruvgreen text-md w-2/3 md:text-2xl md:pl-11 md:w-1/2 ">
+				Currently a{" "}
+				<span className=" bg-[#2F3B13] rounded-sm p-1">
+					Data Engineer
+				</span>{" "}
+				at{" "}
+				<a
+					href="https://standarddata.ai/en/welcome-to-standarddata"
+					target="_blank"
+					className="hover:text-gray-100 transition-all"
+				>
+					StandardData&#8599;
+				</a>
+			</div>
+			<p className="text-left pl-5 text-gruvtan text-md w-2/3 md:text-2xl md:pl-11 md:w-1/2 ">
 				<br />
 				I am a graduate of the Texas A&M College of Engineering with a
 				degree in computer science and a minor in statistics, with a

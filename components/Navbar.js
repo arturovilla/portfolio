@@ -54,26 +54,26 @@ function Navbar() {
 					</Link>
 				</div>
 				<div className="hidden sm:flex">
-					<ul className="flex text-white">
+					<ul className="flex text-gruvpink">
 						<Link href="/">
-							<li className="ml-10 hover:border-b text-lg py-1">
+							<li className="ml-10 hover:border-b hover:border-gruvpink text-lg py-1">
 								Home
 							</li>
 						</Link>
 
 						<Link href="/work">
-							<li className="ml-10 hover:border-b text-lg py-1">
+							<li className="ml-10 hover:border-b hover:border-gruvpink text-lg py-1">
 								Work
 							</li>
 						</Link>
 
 						<Link href="/resume">
-							<li className="ml-10 hover:border-b text-lg py-1">
+							<li className="ml-10 hover:border-b hover:border-gruvpink text-lg py-1">
 								Resume
 							</li>
 						</Link>
 						<Link href="/contact">
-							<li className="ml-10 text-lg py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out">
+							<li className="ml-10 text-lg py-1 px-5 text-gruv rounded-md border border-gruvpink hover:bg-gruvpink hover:text-[#0C0D1C]  transition duration-150 ease-in-out">
 								Contact
 							</li>
 						</Link>
@@ -85,7 +85,7 @@ function Navbar() {
 						onClick={handleNav}
 						className="sm:hidden pl-20 cursor-pointer "
 					>
-						<AiOutlineMenu size={25} color="white" />
+						<AiOutlineMenu size={25} color="#E95584" />
 					</div>
 				</div>
 			</div>
@@ -93,22 +93,22 @@ function Navbar() {
 			<div
 				className={
 					menuOpen
-						? "fixed left-0 top-0 w-[100%] sm:hidden h-screen bg-gray-900/70 backdrop-blur-md p-10 ease-in duration-500"
+						? "fixed left-0 top-0 w-[100%] sm:hidden h-screen bg-gray-900/70 backdrop-blur-sm p-10 ease-in duration-500"
 						: "fixed left-[-100%] top-0 p-10 ease-in duration-500"
 				}
 			>
 				{/* inside mobile menu */}
 				<div className="flex w-full items-center justify-end ">
 					<div onClick={handleNav} className="cursor-pointer">
-						<AiOutlineClose size={20} color="white" />
+						<AiOutlineClose size={20} color="#E95584" />
 					</div>
 				</div>
-				<div className="flex-col items-center text-center text-5xl py-4 text-white">
+				<div className="flex-col items-center text-center text-5xl py-4 text-gruvred">
 					<ul>
 						<Link href="/">
 							<li
 								onClick={() => setMenuOpen(false)}
-								className="hover:border-b pt-10"
+								className="hover:border-b border-gruvgreen pt-10 pb-3"
 							>
 								Home
 							</li>
@@ -116,7 +116,7 @@ function Navbar() {
 						<Link href="/work">
 							<li
 								onClick={() => setMenuOpen(false)}
-								className="hover:border-b pt-10"
+								className="hover:border-b border-gruvgreen pt-10 pb-3"
 							>
 								Work
 							</li>
@@ -125,7 +125,7 @@ function Navbar() {
 						<Link href="/resume">
 							<li
 								onClick={() => setMenuOpen(false)}
-								className=" hover:border-b pt-10"
+								className="hover:border-b border-gruvgreen pt-10 pb-3"
 							>
 								Resume
 							</li>
@@ -133,7 +133,7 @@ function Navbar() {
 						<Link href="/contact">
 							<li
 								onClick={() => setMenuOpen(false)}
-								className="hover:border-b pt-10"
+								className="hover:border-b border-gruvgreen pt-10 pb-3"
 							>
 								Contact
 							</li>
@@ -149,21 +149,21 @@ function Navbar() {
 						<AiOutlineLinkedin
 							size={40}
 							className="cursor-pointer"
-							color="white"
+							color="#F12F26"
 						/>
 					</a>
 					<a href="https://github.com/arturovilla" target="_blank">
 						<AiOutlineGithub
 							size={40}
 							className="cursor-pointer"
-							color="white"
+							color="#F12F26"
 						/>
 					</a>
 					<a href={`mailto:${email}`}>
 						<AiOutlineMail
 							size={40}
 							className="cursor-pointer"
-							color="white"
+							color="#F12F26"
 						/>
 					</a>
 				</div>

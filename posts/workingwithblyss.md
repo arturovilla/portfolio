@@ -1,7 +1,7 @@
 ---
 title: "Redesigning a site for a dating Company"
 date: "06-30-2023"
-excerpt: "Optimizing for different screen sizes is really time consuming but super important."
+excerpt: "Optimizing for the web is time consuming"
 cover_image: "https://drive.google.com/uc?export=view&id=154Ys--up2rD_Bq7UQbfUTLrxKOHXPk3r"
 tags:
     - Tailwind

@@ -7,17 +7,17 @@ function Messagesent() {
 
 	return (
 		<div className="mt-48 mb-96">
-			<div className=" text-white text-center flex flex-col items-center justify-center">
+			<div className=" text-gruvred text-center flex flex-col items-center justify-center">
 				<h1 className="text-6xl font-bold">
-					Thank you for you email, {router.query.name}!
+					Thanks for your email, {router.query.name}!
 				</h1>
-				<p className="mt-20 mb-20">
+				<p className="mt-20 mb-20 text-gruvpink">
 					I have recieved your email and will get in touch soon by
 					replying back to{" "}
-					<span className="font-semibold">{router.query.email}</span>
+					<span className="font-bold">{router.query.email}.</span>
 				</p>
 				<Link href="/">
-					<p className="text-lg py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out">
+					<p className="text-lg py-1 px-5 text-gruvpink rounded-md border border-gruvpink hover:bg-gruvpink hover:text-black transition duration-150 ease-in-out">
 						Go back to home page
 					</p>
 				</Link>

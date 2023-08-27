@@ -8,7 +8,7 @@ import {
 const email = "artuvillam@gmail.com";
 function Footer() {
 	return (
-		<div className="bg-pink-800 flex-col items-center text-center py-16">
+		<div className="bg-pink-900 flex-col items-center text-center py-16">
 			<div className="flex justify-center ">
 				<div className="flex justify-between w-1/2 md:w-1/5 ">
 					<a

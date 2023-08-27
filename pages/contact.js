@@ -64,21 +64,21 @@ function Contact() {
 	});
 
 	return (
-		<div className="text-white mt-48 mb-72  text-center mx-auto max-w-xl px-6">
+		<div className="text-gruvred mt-48 mb-72  text-center mx-auto max-w-xl px-6">
 			<span className="text-6xl font-bold">Contact Me</span>
 			<form
 				className="text-left text-gray-800 pt-6"
 				onSubmit={formik.handleSubmit}
 			>
 				{/* name */}
-				<div className=" flex flex-col text-white">
+				<div className=" flex flex-col text-gruvred">
 					<label
 						htmlFor="name"
 						className={` font-semibold ${
 							formik.touched.name && formik.errors.name
 								? "text-[#ffa449]"
 								: ""
-						}`}
+						} `}
 					>
 						{formik.touched.name && formik.errors.name
 							? formik.errors.name
@@ -89,7 +89,7 @@ function Contact() {
 							formik.touched.name && formik.errors.name
 								? "border-[#ffa449] ring-[#ffa449] focus:border-[#ffa449] focus:ring-[#ffa449]"
 								: ""
-						} mt-3 mb-5 text-white bg-[#0C0D1C] rounded-md border border-white focus:border-[#DF2FE3] focus:ring-[#DF2FE3]`}
+						} mt-3 mb-5 text-white bg-[#0C0D1C] rounded-md border border-gruvred focus:border-[#DF2FE3] focus:ring-[#DF2FE3]`}
 						type="text"
 						id="name"
 						autoComplete="off"
@@ -99,7 +99,7 @@ function Contact() {
 					/>
 				</div>
 				{/* email */}
-				<div className="flex flex-col text-white">
+				<div className="flex flex-col text-gruvred">
 					<label
 						htmlFor="email"
 						className={`font-semibold ${
@@ -117,7 +117,7 @@ function Contact() {
 							formik.touched.email && formik.errors.email
 								? "border-[#ffa449] ring-[#ffa449] focus:border-[#ffa449] focus:ring-[#ffa449]"
 								: ""
-						} mt-3 mb-5 text-white bg-[#0C0D1C] rounded-md border border-white focus:border-[#DF2FE3] focus:ring-[#DF2FE3]`}
+						} mt-3 mb-5 text-white bg-[#0C0D1C] rounded-md border border-gruvred focus:border-[#DF2FE3] focus:ring-[#DF2FE3]`}
 						type="email"
 						id="email"
 						autoComplete="off"
@@ -127,7 +127,7 @@ function Contact() {
 					/>
 				</div>
 				{/* subjectline */}
-				<div className="flex flex-col text-white">
+				<div className="flex flex-col text-gruvred">
 					<label
 						htmlFor="subject"
 						className={`font-semibold ${
@@ -145,7 +145,7 @@ function Contact() {
 							formik.touched.subject && formik.errors.subject
 								? "border-[#ffa449] ring-[#ffa449] focus:border-[#ffa449] focus:ring-[#ffa449]"
 								: ""
-						} mt-3 mb-5 text-white bg-[#0C0D1C] rounded-md border border-white focus:border-[#DF2FE3] focus:ring-[#DF2FE3]`}
+						} mt-3 mb-5 text-white bg-[#0C0D1C] rounded-md border border-gruvred focus:border-[#DF2FE3] focus:ring-[#DF2FE3]`}
 						type="text"
 						id="subject"
 						autoComplete="off"
@@ -155,7 +155,7 @@ function Contact() {
 					/>
 				</div>
 				{/* message */}
-				<div className="flex flex-col text-white">
+				<div className="flex flex-col text-gruvred">
 					<label
 						htmlFor="message"
 						className={`font-semibold ${
@@ -173,7 +173,7 @@ function Contact() {
 							formik.touched.message && formik.errors.message
 								? "border-[#ffa449] ring-[#ffa449] focus:border-[#ffa449] focus:ring-[#ffa449]"
 								: ""
-						} mt-3 mb-5 text-white bg-[#0C0D1C] rounded-md border border-white focus:border-[#DF2FE3] focus:ring-[#DF2FE3]`}
+						} mt-3 mb-5 text-white bg-[#0C0D1C] rounded-md border border-gruvred focus:border-[#DF2FE3] focus:ring-[#DF2FE3]`}
 						rows={4}
 						placeholder="Begin typing..."
 						name="message"
@@ -182,9 +182,9 @@ function Contact() {
 						onBlur={formik.handleBlur}
 					/>
 				</div>
-				<div className="text-white flex justify-center">
+				<div className="text-gruvred flex justify-center">
 					<button
-						className="disabled:bg-slate-400 disabled:text-gray-600 py-1 px-5 text-white rounded-md border border-white hover:bg-white hover:text-black hover:shadow-2xl hover:shadow-stone-300 transition duration-150 ease-in-out"
+						className="disabled:bg-gruvline disabled:text-black disabled:border-gruvline py-1 px-5 text-gruvred rounded-md border border-gruvred hover:bg-gruvred hover:text-black transition duration-150 ease-in-out"
 						type="submit"
 						disabled={loading}
 					>
