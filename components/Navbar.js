@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import staticLogo from "../public/0001.png";
+import staticLogo from "../public/00012.webp";
 
 import {
 	AiOutlineMenu,
