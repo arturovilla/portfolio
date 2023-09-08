@@ -18,14 +18,14 @@ function Resume() {
 					</button>
 				</div>
 
-				<div className="bg-[#6E2940] px-3 py-2 rounded-md">
+				<div className="border border-gruvpink px-3 py-2 rounded-md">
 					{/* /////////////////////////////////////////////// */}
 					<h1 className=" text-4xl font-bold">
 						Arturo Villalobos Jr
 					</h1>
 					<p className="text-xs pt-3 pb-2">
-						San Antonio, TX | artuvillam@gmail.com | +1 432-312-5912
-						| https://www.linkedin.com/in/rtvro/ |
+						San Antonio, TX | artuvillam@gmail.com |
+						https://www.linkedin.com/in/rtvro/ |
 						https://github.com/arturovilla | arturovillalobos.dev
 					</p>
 					<hr className="" />
