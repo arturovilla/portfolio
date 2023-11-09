@@ -24,9 +24,10 @@ function Resume() {
 						Arturo Villalobos Jr
 					</h1>
 					<p className="text-xs pt-3 pb-2">
-						San Antonio, TX | artuvillam@gmail.com |
-						https://www.linkedin.com/in/rtvro/ |
-						https://github.com/arturovilla | arturovillalobos.dev
+						<a href="mailto:artuvillam@gmail.com" className="text-gruvgreen hover:text-gruvtan transition ease-in-out">artuvillam@gmail.com</a> |
+						<a href="https://www.linkedin.com/in/rtvro/" target="_blank" className="text-gruvgreen hover:text-gruvtan transition ease-in-out"> https://www.linkedin.com/in/rtvro/</a> |
+						<a href="https://github.com/arturovilla" target="_blank" className="text-gruvgreen hover:text-gruvtan transition ease-in-out"> https://github.com/arturovilla</a> | 
+						<a href="https://arturovillalobos.dev" target="_blank" className="text-gruvgreen hover:text-gruvtan transition ease-in-out"> arturovillalobos.dev</a>
 					</p>
 					<hr className="" />
 
@@ -61,7 +62,7 @@ function Resume() {
 					<h2 className="font-semibold pt-3">WORK EXPERIENCE</h2>
 					<div className=" pb-2">
 						<div className="flex justify-between font-medium text-md">
-							<h3>Web Developer, Blyss Dating (Remote)</h3>
+							<h3><span className="text-gruvpink">Web Developer</span>, Blyss Dating (Remote)</h3>
 							<h3> Mar 2023 - July 2023</h3>
 						</div>
 						<div className="text-left pb-2 text-sm w-10/12">
@@ -87,7 +88,7 @@ function Resume() {
 
 						<div className="flex justify-between font-medium text-md">
 							<h3>
-								Software Developer, Classic Canvas Company, San
+								<span className="text-gruvpink">Software Developer</span>, Classic Canvas Company, San
 								Antonio, TX.
 							</h3>
 							<h3>Feb 2023 - June 2023</h3>
@@ -111,7 +112,7 @@ function Resume() {
 
 						<div className="flex justify-between font-medium text-md">
 							<h3>
-								Cloud Solutions Architect Internship, University
+								<span className="text-gruvpink">Cloud Solutions Architect Internship</span>, University
 								Lands, Houston, TX
 							</h3>
 							<h3>May 2020 - Aug 2020</h3>
@@ -136,7 +137,7 @@ function Resume() {
 
 						<div className="flex justify-between font-medium text-md">
 							<h3>
-								Peer Teacher, Texas A&M College of Engineering,
+								<span className="text-gruvpink">Peer Teacher</span>, Texas A&M College of Engineering,
 								College Station, TX.
 							</h3>
 							<h3>Aug 2020 - Dec 2021</h3>
