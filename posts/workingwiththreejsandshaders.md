@@ -2,7 +2,7 @@
 title: "Using Three.js to Render Shaders and Visualize Music"
 date: "08-14-2023"
 excerpt: "Three.js is very very cool"
-cover_image: "https://drive.google.com/uc?export=view&id=1-QN3sPd6l-P4OUf-Bp-5lW21MKgRUTcS"
+cover_image: "https://i.imgur.com/ZPIs83i.jpeg"
 tags:
     - Three.js
     - GLSL
@@ -275,7 +275,7 @@ to bundle together all these files and make a stand alone app that could be ran 
 The result is a very big , not good for web, video, and instead of including it here I've linked below my instagram
 where I continuously post interesting shader art and projects, for now ill include a screenshot.
 
-| ![Music Visualizer](https://drive.google.com/uc?export=view&id=1ca8_dEplhijZ81CSJAp-hgMsvWsPirfH)                        |
+| ![Music Visualizer](https://i.imgur.com/8BIwppu.jpeg)                        |
 | :----------------------------------------------------------------------------------------------------------------------- |
 | _This is the Visualizer. Note the the changing color palette. I think this song was Turn Off the Lights by Fred Again.._ |
 

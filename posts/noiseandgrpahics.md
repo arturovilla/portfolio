@@ -2,7 +2,7 @@
 title: "Fractal Brownian Motion and Shaders"
 date: "10-23-2023"
 excerpt: "Frustrated that math is really cool now..."
-cover_image: "https://drive.google.com/uc?export=view&id=1ZqkC8sBRPJhM0iuc2QyCSCNv64SWIaFw"
+cover_image: "https://i.imgur.com/sLANW2I.jpeg"
 tags:
     - GLSL
     - Math
@@ -29,7 +29,7 @@ But what does that mean exactly? Without having to write out the dirivatives in 
 Here _h_ is the step taken.
 
 
-| ![equation](https://drive.google.com/uc?export=view&id=1TmEfvSXPukKNhJ--LPqeF_gHu3KM-xgz) |
+| ![equation](https://i.imgur.com/VOjl7ZF.png) |
 | :------------------------------------------------------------------------------------------- |
 | _Picture taken from the WPI website_         |
 
@@ -101,7 +101,7 @@ The `noise` and `random` functions here can be replaced by any number of other r
 
 
 
-| ![Picture of Graphic](https://drive.google.com/uc?export=view&id=1G2JzSZicj0QPkdEdTjKbDRVNlxUC_Gjr) |
+| ![Picture of Graphic](https://i.imgur.com/dZj5ZSz.png) |
 | :------------------------------------------------------------------------------------------- |
 | _fBm with a Perlin noise function_         |
 
@@ -126,7 +126,7 @@ vec3 pallete(float t){
 
 Below is a brief animation which to my eye looks really sick. Kinda like multicolored flames from the one episode of Avatar the last Airbender. (iykyk):
 
-| ![gif of fBm](https://drive.google.com/uc?export=view&id=1ISSr9yCk76HyfTM9kvqfF9I8A07Z3EBd) |
+| ![gif of fBm](https://i.imgur.com/PLOhnFR.gif) |
 | :------------------------------------------------------------------------------------------- |
 | _fBm with a random noise function from shadertoy_         |
 

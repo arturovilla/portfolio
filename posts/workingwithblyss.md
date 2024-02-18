@@ -2,7 +2,7 @@
 title: "Redesigning a site for a dating Company"
 date: "06-30-2023"
 excerpt: "Optimizing for the web is time consuming"
-cover_image: "https://drive.google.com/uc?export=view&id=154Ys--up2rD_Bq7UQbfUTLrxKOHXPk3r"
+cover_image: "https://i.imgur.com/osYfymg.jpeg"
 tags:
     - Tailwind
     - Next.js
@@ -18,11 +18,11 @@ While some of the refactoring was tedious, using specific technologies like [Tai
 
 At first, it might seem complex. Many component based libraries like MUI and bootstrap come out of the box with components that are responsive out of the box, the issue is that a lot of these web-apps end up looking very similar:
 
-| ![mui site 2](https://drive.google.com/uc?export=view&id=1MWsP9lggOySs_jxHO0YAA2f9fDp_Rm0F) |
+| ![mui site 2](https://i.imgur.com/qII5wSE.jpeg) |
 | :------------------------------------------------------------------------------------------ |
 |                                                                                             |
 
-| ![mui site 1](https://drive.google.com/uc?export=view&id=1gGAk5osaBLRTmDn3jX1OU9auF3lWAQCT) |
+| ![mui site 1](https://i.imgur.com/FcMF2e6.jpeg) |
 | :------------------------------------------------------------------------------------------ |
 | _Different projects from the MUI website_                                                   |
 
@@ -30,13 +30,13 @@ Back to the Blyss Website, I had a starting point. Blyss as a company had alread
 
 A Lot of these products have a WYSIWYG type of editor. Dragging and dropping components , added component specific styles, and adding and editing assets right on the editor. This issue comes when there is a specific use case for certain features that leads to incompatibility with your chosen design style.
 
-| ![old Blyss website](https://drive.google.com/uc?export=view&id=1DKsBSjpYvBCOhFrVA5VUixg6XGtHSlch) |
+| ![old Blyss website](https://i.imgur.com/TntRwzv.jpeg) |
 | :------------------------------------------------------------------------------------------------- |
 | _Screenshot of the old Blyss website as viewed from and iPhone_                                    |
 
 With some tailwind css and some components build with best practices I was able to easily change and improve the site one devices with changing screen dimensions:
 
-| ![new Blyss website](https://drive.google.com/uc?export=view&id=1GlByyX-XWoPxnGcltVgNCMyLfrwAO66b) |
+| ![new Blyss website](https://i.imgur.com/2XyA1W6.jpeg) |
 | :------------------------------------------------------------------------------------------------- |
 | _Screenshot of the new Blyss website as viewed from and iPhone_                                    |
 
@@ -50,6 +50,6 @@ I want this page to give the best impression possible for Blyss, and thus in the
 
 What I found really interesting about this project is the way I was able to use some graphic design skills I have picked up over the years. I cleaned up some existing assets by removing the background on those images and converting them to png as well as creating some assets to use as the favicon used in several places.
 
-| ![new Blyss website](https://drive.google.com/uc?export=view&id=1OLs750-J-IT5LKgdmP25tdsoFRGwiYRY) |
+| ![new Blyss website](https://i.imgur.com/Bwft4VF.jpeg) |
 | :------------------------------------------------------------------------------------------------- |
 | _favicon tab at the top of the browser_                                                            |

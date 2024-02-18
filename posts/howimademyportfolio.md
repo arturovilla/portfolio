@@ -2,7 +2,7 @@
 title: "How I made my portfolio"
 date: "06-05-2023"
 excerpt: "A recurring learning experience that I really enjoy"
-cover_image: "https://drive.google.com/uc?export=view&id=1jFl7Ar3d78QkH1iY2EmJ-fO9sTtRPkLg"
+cover_image: "https://i.imgur.com/3qiMNLx.jpg"
 tags:
     - Tailwind
     - Next.js
@@ -16,7 +16,7 @@ When I made my first portfolio the things I could make were very crude and the f
 
 What also hindered my first couple portfolios was my ignorance of popular and useful web-technologies that, in combination with experience , could take my portfolios and the way I present myself to the next level.
 
-| ![First Website](https://drive.google.com/uc?export=view&id=1wNOWAh8W-ua0zwnHLFaHPk-Gw0qIUR1b) |
+| ![First Website](https://i.imgur.com/R92ZbvE.jpg) |
 | :--------------------------------------------------------------------------------------------- |
 | _This is my first website the font, color, and size of everything is funny to look back on_    |
 
@@ -65,14 +65,14 @@ export async function getStaticProps({ params: { slug } }) {
 As I said before, the way I used to do styling was just pure css. Tweaking every detail to exactly the way I wanted pixel by pixel. Even when I started experimenting with React I still made tons of css files for the smallest components. This was dysfunctional and unorganized.
 All those CSS files bloated up the project and made first loads really long, in some instances over 30 seconds. Then I discovered Tailwind.
 
-| ![Old Project](https://drive.google.com/uc?export=view&id=13ENrEuhlFjVnxu8EjS_lou0Hnd6sx9-e) |
+| ![Old Project](https://i.imgur.com/xULd7I7.jpg) |
 | :------------------------------------------------------------------------------------------- |
 | _Old project from school where we implemented a tinder-like platform but for gamers_         |
 
 Tailwind is the best tool that I have found that allows for a vast amount of customizability while still giving you a design system that results in a good looking site. There is already good tooling for it with some vs-code extensions that show you exactly what its doing.
 Better yet, all unused css gets purged leading to smaller amounts of css getting transferred over the network.
 
-| ![css tooling](https://drive.google.com/uc?export=view&id=18ncC-8pyBJkBS_rbEQ6NbF0_xgnosbu_) |
+| ![css tooling](https://i.imgur.com/4xJFqFC.jpg) |
 | :------------------------------------------------------------------------------------------- |
 | _vs-code extension that shows you what css is being used for tailwind utility functions_     |
 

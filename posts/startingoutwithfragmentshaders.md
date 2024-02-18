@@ -2,7 +2,7 @@
 title: "Making My Own Custom Shaders"
 date: "08-03-2023"
 excerpt: "Quickly figuring out that GLSL is better than MSL"
-cover_image: "https://drive.google.com/uc?export=view&id=1HRpcxRf__yQ0mIEVljQsn9wVkZ6QiBMD"
+cover_image: "https://i.imgur.com/LYMpHab.jpeg"
 tags:
     - webgl
     - GLSL
@@ -15,7 +15,7 @@ tags:
 So recently i was scrolling through instagram and saw the post below by artist @italiano.jpg.
 He uses [P5.js](https://p5js.org) to render these animations onto an html canvas and using the help of mathematical functions, he is able to create pretty mesmerizing and interesting animations.
 
-| ![Italiano's work](https://drive.google.com/uc?export=view&id=1BOgU8u4yu-Gg8oqbmULL0iKXrAaBIuHA) |
+| ![Italiano's work](https://i.imgur.com/hY3Zo06.gif) |
 | :----------------------------------------------------------------------------------------------- |
 | _This is a sample Post of Italiano's work, using P5.js, processing, or some other framework_     |
 
@@ -29,14 +29,14 @@ environment is MacOS Ventura 13.4.1 on apple silicon. This is very important, al
 
 I started out on the Apple developer website to find [this](https://developer.apple.com/documentation/metal/using_metal_to_draw_a_view_s_contents):
 
-| ![Apple developer Page](https://drive.google.com/uc?export=view&id=1GAQM9j0f-uMegl8-niUZcdeq7szbaz4Z) |
+| ![Apple developer Page](https://i.imgur.com/lOmy1lv.jpeg) |
 | :---------------------------------------------------------------------------------------------------- |
 | _Page grab of the apple developer page_                                                               |
 
 If you follow the link you'll see that the documentation is immense, almost overwhelming. Long story long, in order to get good tooling for MLS(Metal shading language) like linting and error checking , I needed to use Apple's proprietary IDE, Xcode.
 The issue with this is that Xcode has so much configuration, views, and management features that I simply don't need or want. Just take a look at the screen shot below:
 
-| ![Xcode Screen Grab](https://drive.google.com/uc?export=view&id=1idWf8TnTYl_TPZf_eHWEha13QhCZKW4b)                                                        |
+| ![Xcode Screen Grab](https://i.imgur.com/yS00aXv.jpeg)                                                        |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | _To me this IDE feels a bit too overwhelming to just experiment, also i cant even run the sample project without downloading the 3.3gb Apple TV SDKs lol_ |
 
@@ -46,7 +46,7 @@ For example. check [this](https://alain.xyz/blog/a-review-of-shader-languages) w
 A review of shader languages was a great starting point that I wish i would have found earlier and it is here where I found out about GLSL (OpenGL Shading Language).
 I knew this would run well on my platform. While OpenGL has been unsupported by apple for some time now, OpenGL and WGSL work really well together and I do end up outputting my fragment shaders to the browser while still retaining performance.
 
-| ![A Review of Shader Languages](https://drive.google.com/uc?export=view&id=1RGZc90sRRYCOcEM38lT3OJaxIFrAaC0G) |
+| ![A Review of Shader Languages](https://i.imgur.com/rY2MZe7.png) |
 | :------------------------------------------------------------------------------------------------------------ |
 | _This shows the interoperability between GLSL and Wgsl_                                                       |
 
@@ -95,6 +95,6 @@ void main(){
 }
 ```
 
-| ![My Custom Shader](https://drive.google.com/uc?export=view&id=1ZAUl1ZhpPGbRBDmy2UFlHCm-S2Q_H2Er) |
+| ![My Custom Shader](https://i.imgur.com/GEZFSxY.jpeg) |
 | :------------------------------------------------------------------------------------------------ |
 | _A fractal design that i am starting out with, we will see where it goes from here_               |
