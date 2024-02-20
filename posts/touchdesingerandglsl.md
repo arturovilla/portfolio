@@ -38,7 +38,7 @@ After playing around with it for a while, I was able to get my GLSL shader code 
 | _Current Touch Designer Project_         |
 
 
-### How Did I Get This Work ?
+### How Did I Get This To Work ?
 
 First things first, I need to thank the amazing and extremely talented [Torin Blankensmith](https://www.instagram.com/blankensmithing/). Without his help, I would have never been able to get my GLSL shader running in TouchDesigner. During the NYC Resistor Meetup, he shared with me an audio analyzer .tox file. A quick aside on .tox files: they are essentially shareable components that can be imported into TouchDesigner.
 
