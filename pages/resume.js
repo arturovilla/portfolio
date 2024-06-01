@@ -3,7 +3,7 @@ import useDownloader from "react-use-downloader";
 
 function Resume() {
 	const { download } = useDownloader();
-	const fileUrl = "/arturo_villalobos_resume.pdf";
+	const fileUrl = "/arturoresume.pdf";
 	const filename = "arturo_villalobos_resume.pdf";
 
 	return (
@@ -36,19 +36,18 @@ function Resume() {
 						SKILLS AND CERTIFICATIONS
 					</h2>
 					<div className="text-left pb-2">
-						<ul class="list-disc pl-6">
+						<ul className="list-disc pl-6">
 							<li>
-								C++, Java, Python 3+, R, Javascript, HTML, CSS,
-								React.js, Node.js, SQL, AWS, Machine Learning
+								Java, Python 3+, Javascript, HTML/CSS, Rstats, C++.
 							</li>
 							<li>
-								Platforms and Tools: Git Version Control,
-								VScode, Xcode, Adobe Illustrator, Unreal Engine
-								4, Blender
+								MSSQL/SQL, MongoDB, Redis, NoSQL, AWS/Azure, Docker, Ansible.
 							</li>
 							<li>
-								AWS Certified Cloud Practitioner Certification |
-								Issued June 2020- Expires June 2023
+								Platforms and Tools: Git Version Control, VScode, Xcode, Unreal Engine 4, Blender
+							</li>
+							<li>
+								AWS Certified Cloud Practitioner Certification | Issued June 2020- Expires June 2023
 							</li>
 							<li>
 								Languages: English-Native, Spanish-Native,
@@ -62,26 +61,38 @@ function Resume() {
 					<h2 className="font-semibold pt-3">WORK EXPERIENCE</h2>
 					<div className=" pb-2">
 						<div className="flex justify-between font-medium text-md">
+							<h3><span className="text-gruvpink">Data Infrastructure Engineer</span>, Standard Data Inc.</h3>
+							<h3> Aug 2023 - Present</h3>
+						</div>
+						<div className="text-left pb-2 text-sm w-10/12">
+							<ul class="list-disc pl-6">
+								<li>
+									Engineered and implemented micro-services for ML-enhanced maintenance calculations in military and industrial applications, 
+									seamlessly integrating diverse environments and technologies to optimize performance and scalability.
+								</li>
+								<li>
+									Lead the CI/CD initiatives for comprehensive project deployment, orchestrating front-end and back-end integration using Azure Pipelines, 
+									Ansible, and Docker to ensure seamless and efficient delivery.
+								</li>
+								<li>
+									Partnered with project stakeholders to define requirements, conduct demonstrations, 
+									and deploy live versions of projects to Air Force bases nationwide, ensuring alignment with strategic objectives and operational readiness.
+								</li>
+							</ul>
+						</div>
+						<div className="flex justify-between font-medium text-md">
 							<h3><span className="text-gruvpink">Web Developer</span>, Blyss Dating (Remote)</h3>
 							<h3> Mar 2023 - July 2023</h3>
 						</div>
 						<div className="text-left pb-2 text-sm w-10/12">
 							<ul class="list-disc pl-6">
 								<li>
-									Develop and deploy a highly scalable and
-									maintainable business website using
-									React/Next.js, Tailwind CSS and AWS.
+									Develop and deploy a maintainable, and user-friendly business website leveraging modern technologies such as React/Next.js, Tailwind CSS, and AWS. 
+									This includes designing intuitive user interfaces, ensuring responsive performance, and implementing best practices.
 								</li>
 								<li>
-									Integrate a headless content management
-									system (CMS) for Blyss news room and blog
-									capabilities with GraphQL, giving other team
-									members the ability to add content.
-								</li>
-								<li>
-									Ensure that the website was viewable and
-									performant on different mobile devices and
-									browsers.
+									Integrate a headless content management system (CMS) using GraphQL to empower the Blyss newsroom and blog capabilities. 
+									This integration enables team members to seamlessly add and manage content, ensuring a flexible and efficient content delivery system that enhances the overall workflow.
 								</li>
 							</ul>
 						</div>
@@ -96,16 +107,12 @@ function Resume() {
 						<div className="text-left pb-2 text-sm w-10/12">
 							<ul class="list-disc pl-6">
 								<li>
-									Develop internal automation tools and web
-									interface using React, Python, and AWS to
-									increased social media presence and activity
-									without allocating more resources to
-									marketing.
+									Develop internal automation tools and a web interface using React, Python, and AWS to boost social media presence and activity. 
+									These tools will streamline marketing efforts, allowing for increased engagement and reach without the need for additional marketing resources.
 								</li>
 								<li>
-									Create and maintain SOPs detailing tools
-									that where used, specific system design
-									decisions, and other information.
+									Create and maintain comprehensive documentation detailing the tools used, specific system design decisions, and other relevant information. 
+									This documentation will serve as a valuable resource for current and future team members, ensuring transparency, consistency, and ease of knowledge transfer within the organization.
 								</li>
 							</ul>
 						</div>
@@ -120,17 +127,12 @@ function Resume() {
 						<div className="text-left pb-2 text-sm w-10/12">
 							<ul class="list-disc pl-6">
 								<li>
-									Developed and deployed sever-less lambda
-									functions in python on the AWS cloud that
-									automates the ETL of data from Drilling and
-									Completion reports coming from oil wells in
-									the Permian Basin.
+									Develop and deploy server-less Lambda functions in Python on the AWS cloud to automate the ETL (Extract, Transform, Load) processes for data from Drilling and Completion reports in the Permian Basin. 
+									This solution enhances data processing efficiency, scalability, and accuracy, streamlining the integration of critical oil well data into the system.
 								</li>
 								<li>
-									Built architecture used by chemical and
-									mechanical engineers to build type curves
-									and facilitate cost analysis of current
-									wells
+									Design and implement architecture utilized by chemical and mechanical engineers to construct type curves and facilitate cost analysis of current wells. 
+									This architecture supports advanced data analysis and decision-making processes, enhancing the efficiency and accuracy of engineering evaluations and financial assessments. 
 								</li>
 							</ul>
 						</div>
@@ -145,16 +147,12 @@ function Resume() {
 						<div className="text-left pb-2 text-sm w-10/12">
 							<ul class="list-disc pl-6">
 								<li>
-									Tutored undergraduate and graduate students
-									enrolled in Computer Science and Engineering
-									courses in both remote and in-person.
+									Tutor undergraduate and graduate students enrolled in Computer Science and Engineering courses, providing guidance and support both remotely and in-person. 
+									This includes helping students understand complex concepts, improve their problem-solving skills, and succeed academically through personalized instruction and mentorship.
 								</li>
 								<li>
-									Taught the following courses: Data
-									Structures and Algorithms , Introduction to
-									Computing, Computer Organizations, Discrete
-									Mathematics, and Linear Algebra under
-									professor supervision
+									Taught courses including Data Structures and Algorithms, Introduction to Computing, Computer Organization, Discrete Mathematics, and Linear Algebra under the supervision of a professor. 
+									This involved preparing lectures, grading assignments, and offering individualized support to enhance students' understanding and performance in these subjects.
 								</li>
 							</ul>
 						</div>
@@ -220,21 +218,6 @@ function Resume() {
 									highlighting different aspects of the data
 									to reveal underlying and interesting
 									patterns.
-								</li>
-							</ul>
-						</div>
-
-						<div className="flex justify-between font-medium text-md">
-							<h3>Market Dash - Co-Developer - Video Game</h3>
-							<h3>Mar 2020- Apr 2020</h3>
-						</div>
-						<div className="text-left pb-2 text-sm w-10/12">
-							<ul class="list-disc pl-6">
-								<li>
-									Developed a game in C++ inside Unreal Engine
-									4 incorporating concepts and ideas like
-									object oriented design, graphic design,
-									planning, and testing.
 								</li>
 							</ul>
 						</div>
