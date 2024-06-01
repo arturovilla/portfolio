@@ -152,7 +152,7 @@ function Resume() {
 								</li>
 								<li>
 									Taught courses including Data Structures and Algorithms, Introduction to Computing, Computer Organization, Discrete Mathematics, and Linear Algebra under the supervision of a professor. 
-									This involved preparing lectures, grading assignments, and offering individualized support to enhance students' understanding and performance in these subjects.
+									This involved preparing lectures, grading assignments, and offering individualized support to enhance students&apos; understanding and performance in these subjects.
 								</li>
 							</ul>
 						</div>
