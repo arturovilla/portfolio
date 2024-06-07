@@ -56,6 +56,27 @@ function Resume() {
 						</ul>
 					</div>
 					<hr className="" />
+					<div className="text-left pb-2">
+						<ul className="list-disc pl-6">
+							<li>
+								Java, Python 3+, Javascript, HTML/CSS, Rstats, C++.
+							</li>
+							<li>
+								MSSQL/SQL, MongoDB, Redis, NoSQL, AWS/Azure, Docker, Ansible.
+							</li>
+							<li>
+								Platforms and Tools: Git Version Control, VScode, Xcode, Unreal Engine 4, Blender
+							</li>
+							<li>
+								AWS Certified Cloud Practitioner Certification | Issued June 2020- Expires June 2023
+							</li>
+							<li>
+								Languages: English-Native, Spanish-Native,
+								Portuguese-Beginner
+							</li>
+						</ul>
+					</div>
+					<hr className="" />
 
 					{/* /////////////////////////////////////////////// */}
 					<h2 className="font-semibold pt-3">WORK EXPERIENCE</h2>
