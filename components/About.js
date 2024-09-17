@@ -7,7 +7,7 @@ function About() {
 				<h1 className=" text-left pl-5 pr-5 md:text-8xl md:pl-11 text-6xl w-full px-0 mx-0">
 					Hello, I&apos;m
 				</h1>
-				<span className=" transition-all text-left pl-5 pr-5 md:text-8xl md:pl-11 w-full px-0 mx-0">
+				<span className=" text-left pl-5 pr-5 md:text-8xl md:pl-11 text-6xl w-full px-0 mx-0">
 					Arturo Villalobos
 				</span>
 			</div>
