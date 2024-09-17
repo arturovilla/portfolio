@@ -1,29 +1,6 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import parse from "html-react-parser";
 
 function About() {
-	const words = [
-		"<span className='font-extrabold italic text-5xl md:text-7xl lg:text-8xl' >Arturo <br className='md:hidden' /> Villalobos</span>",
-		"<span className='font-extrabold italic text-5xl md:text-7xl lg:text-8xl' >a Software Engineer 👨🏻‍💻</span>",
-		"<span className='font-extrabold italic text-5xl md:text-7xl lg:text-8xl' >a Data Scientist 📊</span>",
-		"<span className='font-extrabold italic text-5xl md:text-7xl lg:text-8xl' >a Graphic Designer 👨🏼‍🎨</span>",
-		"<span className='font-extrabold italic text-5xl md:text-7xl lg:text-8xl' >a 3-D Modeler 🗜️</span>",
-	];
-
-	const [index, setIndex] = useState(0);
-	useEffect(() => {
-		const intervalDelayMilliseconds = words[index].length * 10;
-		const interval = setInterval(() => {
-			setIndex((prevIndex) => {
-				// reset index if current index is greater than array size
-				return prevIndex + 1 < words.length ? prevIndex + 1 : 0;
-			});
-		}, intervalDelayMilliseconds);
-
-		return () => clearInterval(interval);
-	});
-
 	return (
 		<div className="">
 			<div className=" text-gruvred flex flex-col">
@@ -31,8 +8,7 @@ function About() {
 					Hello, I&apos;m
 				</h1>
 				<span className=" transition-all text-left pl-5 pr-5 md:text-8xl md:pl-11 w-full px-0 mx-0">
-					{/* <mark>{parse(words[index])}</mark> */}
-					{parse(words[index])}
+					Arturo Villalobos
 				</span>
 			</div>
 			<div className="pt-5 pb-8 text-left pl-5 text-gruvgreen text-md w-2/3 md:text-2xl md:pl-11 md:w-1/2 ">
@@ -62,7 +38,7 @@ function About() {
 				As a freelance software engineer I like taking on projects in
 				industries that one would not necessarily think about. Fashion,
 				art, product design, and e-commerce are all things I have an
-				interest in and am working towards getting to know more about.
+				interest in.
 			</p>
 		</div>
 	);

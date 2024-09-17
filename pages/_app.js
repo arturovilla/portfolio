@@ -11,13 +11,11 @@ const Druk = localFont({
 
 export default function App({ Component, pageProps }) {
 	return (
-		<main className={`${Druk.variable}`}>
+		<main className="min-h-screen" >
 			<Navbar />
 			<Component {...pageProps} />
 			<Analytics />
-			<div className="mt-40">
-				<Footer />
-			</div>
+			<Footer />
 		</main>
 	);
 }

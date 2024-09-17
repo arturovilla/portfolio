@@ -64,7 +64,7 @@ function Contact() {
 	});
 
 	return (
-		<div className="text-gruvred mt-48 mb-72  text-center mx-auto max-w-xl px-6">
+		<div className="text-gruvred mt-48 mb-96  text-center mx-auto max-w-xl px-6">
 			<span className="text-6xl font-bold">Contact Me</span>
 			<form
 				className="text-left text-gray-800 pt-6"
