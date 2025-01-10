@@ -27,7 +27,7 @@ function Resume() {
 						<a href="mailto:artuvillam@gmail.com" className="text-gruvpink hover:text-gruvtan transition ease-in-out">artuvillam@gmail.com</a> |
 						<a href="https://www.linkedin.com/in/rtvro/" target="_blank" className="text-gruvpink hover:text-gruvtan transition ease-in-out"> https://www.linkedin.com/in/rtvro/</a> |
 						<a href="https://github.com/arturovilla" target="_blank" className="text-gruvpink hover:text-gruvtan transition ease-in-out"> https://github.com/arturovilla</a> | 
-						<a href="https://arturovillalobos.dev" target="_blank" className="text-gruvpink hover:text-gruvtan transition ease-in-out"> arturovillalobos.dev</a>
+						<a href="https://www.rtvro.dev" target="_blank" className="text-gruvpink hover:text-gruvtan transition ease-in-out"> rtvro.dev</a>
 					</p>
 					<hr className="" />
 
