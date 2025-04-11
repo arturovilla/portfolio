@@ -61,7 +61,7 @@ function Resume() {
 					<h2 className="font-semibold pt-3">WORK EXPERIENCE</h2>
 					<div className=" pb-2">
 						<div className="flex justify-between font-medium text-md">
-							<h3><span className="text-gruvpink">Data Infrastructure Engineer</span>, Standard Data Inc.</h3>
+							<h3><span className="text-gruvpink">Software Engineer</span>, Standard Data Inc.</h3>
 							<h3> Aug 2023 - Present</h3>
 						</div>
 						<div className="text-left pb-2 text-sm w-10/12">

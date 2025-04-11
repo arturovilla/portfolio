@@ -14,7 +14,7 @@ function About() {
 			<div className="pt-5 pb-8 text-left pl-5 text-gruvgreen text-md w-2/3 md:text-2xl md:pl-11 md:w-1/2 ">
 				Currently a{" "}
 				<span className=" bg-[#2F3B13] rounded-sm p-1">
-					Data Engineer
+					Software Engineer
 				</span>{" "}
 				at{" "}
 				<a
