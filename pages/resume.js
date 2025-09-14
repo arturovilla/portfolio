@@ -55,92 +55,6 @@ function Resume() {
 					<hr className="" />
 
 					{/* /////////////////////////////////////////////// */}
-					<h2 className="font-semibold pt-3">WORK EXPERIENCE</h2>
-					<div className=" pb-2">
-						<div className="flex justify-between font-medium text-md">
-							<h3><span className="text-gruvpink">Senior Software Engineer</span>, <a href="https://standarddata.ai" className="text-gruvgreen hover:text-gruvtan transition ease-in-out">Standard Data, Inc.</a> Houston, TX.</h3>
-							<h3> Aug 2023 - Present</h3>
-						</div>
-						<div className="text-left pb-2 text-sm w-10/12">
-							<ul class="list-disc pl-6">
-								<li>
-								  Develop and deploy micro-services using Java Spring Boot, TypeScript, MongoDB, and Microsoft SQL Server to deliver machine learning–driven maintenance calculations, ensuring seamless integration across military and industrial systems with diverse performance and scalability requirements.
-								</li>
-								<li>
-								  Lead CI/CD implementation using Azure Pipelines, Ansible, and Docker to automate and integrate front-end and back-end deployments, streamlining project delivery.
-								</li>
-								<li>
-								  Partner with project stakeholders to define requirements, conduct demonstrations, and deploy live versions of projects to various customers nationwide, ensuring alignment with strategic objectives and operational readiness.
-								</li>
-								<li>
-									Develop and maintain a critical deployment and data synchronization tool using C#, Ansible, and Docker, essential for live demonstrations and ensuring up-to-date application data, driving greater customer adoption.
-								</li>
-								<li>
-								  Adapt quickly to organizational needs: originally hired as a Python developer, learn Java to support a major architectural shift; collaborate as one of three backend engineers to transition from micro-services (Python, Redis, MongoDB, Java) to a monolithic design, successfully delivering a beta test within six months.
-								</li>
-								<li>
-								  Develop PHP micro-services for an automotive sensor manufacturer and re-architect the backend to transition from MongoDB to Elastic-search, centralizing data storage and optimizing time-series query performance.
-								</li>
-							</ul>
-						</div>
-						<div className="flex justify-between font-medium text-md">
-							<h3>
-								<span className="text-gruvpink">Software Developer</span>, <a href="https://cccliftbags.com/?srsltid=AfmBOorqJGVz8F6bR0FzA4TqpL1TYKh3EKgYAaQy7UDTorDUoeuys77z" className="text-gruvgreen hover:text-gruvtan transition ease-in-out">Classic Canvas Company</a>, San
-								Antonio, TX.
-							</h3>
-							<h3>Feb 2023 - June 2023</h3>
-						</div>
-						<div className="text-left pb-2 text-sm w-10/12">
-							<ul class="list-disc pl-6">
-								<li>
-								  Developed internal automation tools and a web interface using React, Python, and AWS to boost social media presence and activity. These tools will streamline marketing efforts, allowing for increased engagement and reach without the need for additional marketing resources.
-								</li>
-								<li>
-								  Created and delivered comprehensive documentation detailing the tools used, specific system design decisions, and other relevant information. This documentation will serve as a valuable resource for current and future team members, ensuring transparency, consistency, and ease of knowledge transfer within the organization.
-								</li>
-							</ul>
-						</div>
-
-						<div className="flex justify-between font-medium text-md">
-							<h3>
-								<span className="text-gruvpink">Cloud Solutions Architect Internship</span>, <a href="https://universitylands.utsystem.edu" className="text-gruvgreen hover:text-gruvtan transition ease-in-out">University Lands</a>, Houston, TX
-							</h3>
-							<h3>May 2020 - Aug 2020</h3>
-						</div>
-						<div className="text-left pb-2 text-sm w-10/12">
-							<ul class="list-disc pl-6">
-								<li>
-								  Developed server-less Lambda functions in Python on the AWS cloud to automate the ETL (Extract, Transform, Load) processes for data from Drilling and Completion reports in the Permian Basin. This solution enhances data processing efficiency, scalability, and accuracy, streamlining the integration of critical oil well data into the system.
-								</li>
-								<li>
-								  Designed and developed a cloud architecture utilized by chemical and mechanical engineers to construct type curves and facilitate cost analysis of current wells. This architecture supports advanced data analysis and decision-making processes, enhancing the efficiency and accuracy of engineering evaluations and financial assessments.
-								</li>
-							</ul>
-						</div>
-
-						<div className="flex justify-between font-medium text-md">
-							<h3>
-								<span className="text-gruvpink">Peer Teacher</span>, <a href="https://engineering.tamu.edu/index.html" className="text-gruvgreen hover:text-gruvtan transition ease-in-out">Texas A&M College of Engineering</a>,
-								College Station, TX.
-							</h3>
-							<h3>Aug 2020 - Dec 2021</h3>
-						</div>
-						<div className="text-left pb-2 text-sm w-10/12">
-							<ul class="list-disc pl-6">
-								<li>
-									Tutored undergraduate and graduate students enrolled in Computer Science and Engineering courses, providing guidance and support both remotely and in-person.
-									This includes helping students understand complex concepts, improve their problem-solving skills, and succeed academically through personalized instruction and mentorship.
-								</li>
-								<li>
-									Taught courses including Data Structures and Algorithms, Introduction to Computing, Computer Organization, Discrete Mathematics, and Linear Algebra under the supervision of a professor.
-									This involved preparing lectures, grading assignments, and offering individualized support to enhance students&apos; understanding and performance in these subjects.
-								</li>
-							</ul>
-						</div>
-					</div>
-					<hr className="" />
-
-					{/* /////////////////////////////////////////////// */}
 					<h2 className="font-semibold pt-3">EDUCATION</h2>
 					<div className="pb-2">
 						<div className="flex justify-between font-medium text-md">
@@ -159,6 +73,98 @@ function Resume() {
 					<hr className="" />
 
 					{/* /////////////////////////////////////////////// */}
+					<h2 className="font-semibold pt-3">WORK EXPERIENCE</h2>
+					<div className=" pb-2">
+						<div className="flex justify-between font-medium text-md">
+							<h3><span className="text-gruvpink">Senior Software Engineer</span>, <a href="https://standarddata.ai" className="text-gruvgreen hover:text-gruvtan transition ease-in-out">Standard Data, Inc.</a> Houston, TX.</h3>
+							<h3> Aug 2023 - Present</h3>
+						</div>
+						<div className="text-left pb-2 text-sm w-10/12">
+							<ul class="list-disc pl-6">
+								<li>
+						      Reduced the time soldiers and airmen spent preparing readiness reports by 40% in airbases across the United States through developing micro-services with Java Spring Boot, TypeScript, MongoDB, and Microsoft SQL Server.
+									These services provided machine learning driven maintenance calculations that power a suite of tools automating critical operational tasks.
+								</li>
+								<li>
+						      Led CI/CD initiatives with Azure Pipelines, Ansible, and Docker to automate and integrate front-end and back-end deployments, accelerating prototype delivery.
+									This speed enabled more detailed RFI responses to GSA schedule notices and facilitated faster client feedback.
+								</li>
+								<li>
+						      Partnered with project stakeholders to define requirements, conduct demonstrations, and deploy live versions of projects to various customers nationwide, ensuring alignment with strategic objectives and operational readiness.
+								</li>
+								<li>
+								  Developed and maintained a data synchronization tool using C#, Ansible, and Docker to securely ingest hundreds of gigabytes of sensitive customer data.
+									This tool ensured up-to-date application data for live demonstrations and drove greater customer adoption.
+								</li>
+								<li>
+						      Adapted quickly to organizational needs by learning Java to support a major architectural shift.
+									Partnered with two backend engineers to transition from a micro-services stack (Python, Redis, MongoDB, Java) to a monolithic design, delivering a beta in three months and live-user testing in six.
+								</li>
+								<li>
+						      Engineered PHP micro-services and migrated backend storage from MongoDB to Elastic search, boosting time-series query performance and retaining full data resolution.
+									The redesign reduced infrastructure costs by $50,000 per year.
+								</li>
+							</ul>
+						</div>
+						<div className="flex justify-between font-medium text-md">
+							<h3>
+								<span className="text-gruvpink">Software Developer</span>, <a href="https://cccliftbags.com/?srsltid=AfmBOorqJGVz8F6bR0FzA4TqpL1TYKh3EKgYAaQy7UDTorDUoeuys77z" className="text-gruvgreen hover:text-gruvtan transition ease-in-out">Classic Canvas Company</a>, San
+								Antonio, TX.
+							</h3>
+							<h3>Feb 2023 - June 2023</h3>
+						</div>
+						<div className="text-left pb-2 text-sm w-10/12">
+							<ul class="list-disc pl-6">
+								<li>
+						      Increased the efficiency of current customer outreach efforts by automating email marketing and creating a tool that can schedule and automatically post social media content.
+								</li>
+								<li>
+								  Deployed and configured a self-hosted accounting, invoicing, and expenses platform using Docker and PostgreSQL, with custom features such as company-specific branding, data views, and reporting. The solution eliminated QuickBooks subscriptions, saving over $4,000 annually.
+								</li>
+							</ul>
+						</div>
+
+						<div className="flex justify-between font-medium text-md">
+							<h3>
+								<span className="text-gruvpink">Cloud Solutions Architect Internship</span>, <a href="https://universitylands.utsystem.edu" className="text-gruvgreen hover:text-gruvtan transition ease-in-out">University Lands</a>, Houston, TX
+							</h3>
+							<h3>May 2020 - Aug 2020</h3>
+						</div>
+						<div className="text-left pb-2 text-sm w-10/12">
+							<ul class="list-disc pl-6">
+								<li>
+    						  Automated ETL workflows for Drilling and Completion reports in the Permian Basin by developing server-less Python Lambda functions on AWS.
+                  The solution streamlined integration of critical oil well data and saved engineers significant time previously spent on manual data entry.
+								</li>
+								<li>
+								  Collaborated with mechanical and petroleum engineers to design Python notebook templates that streamlined type curve creation and well cost analysis,
+										improving data-driven decision-making and accelerating engineering and financial evaluations.
+								</li>
+							</ul>
+						</div>
+
+						<div className="flex justify-between font-medium text-md">
+							<h3>
+								<span className="text-gruvpink">Peer Teacher</span>, <a href="https://engineering.tamu.edu/index.html" className="text-gruvgreen hover:text-gruvtan transition ease-in-out">Texas A&M College of Engineering</a>,
+								College Station, TX.
+							</h3>
+							<h3>Aug 2020 - Dec 2021</h3>
+						</div>
+						<div className="text-left pb-2 text-sm w-10/12">
+							<ul class="list-disc pl-6">
+								<li>
+								  Provided individualized support for over 70 undergraduate and graduate students through weekly 3-hour long office hours conducted both in-person and online.
+								</li>
+								<li>
+								  Supported instruction across five courses (Data Structures & Algorithms, Introduction to Computing, Computer Organization, Discrete Mathematics, and Linear Algebra)
+								  by reviewing materials and grading assignments, ensuring consistency and up-to-date academic resources.
+								</li>
+							</ul>
+						</div>
+					</div>
+					<hr className="" />
+
+					{/* /////////////////////////////////////////////// */}
 					<h2 className="font-semibold pt-3">PROJECTS</h2>
 					<div className="pb-2">
 						<div className="flex justify-between font-medium text-md">
@@ -168,10 +174,10 @@ function Resume() {
 						<div className="text-left pb-2 text-sm w-10/12">
 							<ul class="list-disc pl-6">
 								<li>
-								  Design and build custom real-time 3D art installations for music artists, leveraging TouchDesigner, Blender, and advanced mathematical techniques to deliver dynamic visuals for weekly live performances. These interactive visual systems enhance audience engagement and adapt seamlessly to diverse performance environments.
+    						  Created immersive real-time 3D installations with TouchDesigner, Blender, and mathematical modeling, enhancing weekly live shows and permanent exhibits experienced by over 300 patrons per day.
 								</li>
 								<li>
-								  Maintain and repair high-performance servers powering real-time visualizations and gallery-wide installations, ensuring reliability and minimal downtime.
+						      Maintain and repair over dozen high-performance servers powering real-time visualizations and gallery-wide installations, ensuring reliability and minimal downtime.
 								</li>
 							</ul>
 						</div>
