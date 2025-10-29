@@ -17,7 +17,7 @@ In terms of frequency, readers shouldn’t expect these tutorials to come out of
 This tutorial assumes beginner-level experience with TouchDesigner.
 
 A fellow developer at ART-CLUB mentioned that the club could use more dark visuals rather than the bright and loud ones we usually see.
-I agreed — so this tutorial is the result of my attempt to create darker, moodier visuals.
+I agreed so this tutorial is the result of my attempt to create darker, moodier visuals.
 
 For this tutorial, I’ll be using **TouchDesigner (TD) Experimental version 2025.31310.**
 We’ll be creating the following visual, which leverages TD’s newest operator family: POPs.
