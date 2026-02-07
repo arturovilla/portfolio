@@ -8,7 +8,16 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				druk: ["var(--font-Druk-bold)"],
+  			druk: ["var(--font-Druk-bold)"],
+        // Geist
+        gsans: ["var(--font-geist-sans)"],
+        gmono: ["var(--font-geist-mono)"],
+        // Geist Pixel variants
+        "gp-square": ["var(--font-geist-pixel-square)"],
+        "gp-grid": ["var(--font-geist-pixel-grid)"],
+        "gp-circle": ["var(--font-geist-pixel-circle)"],
+        "gp-triangle": ["var(--font-geist-pixel-triangle)"],
+        "gp-line": ["var(--font-geist-pixel-line)"],
 			},
 			colors: {
 				gruvred: "#F12F26",
