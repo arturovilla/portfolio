@@ -1,4 +1,3 @@
-// components/Navbar.jsx
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -20,13 +19,15 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleNav = () => setMenuOpen((v) => !v);
 
-  // hide on scroll down, show on scroll up
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
+
+      setScrolled(currentScrollPos > 20);
 
       if (currentScrollPos < 40) setVisible(true);
       else setVisible(currentScrollPos <= prevScrollPos);
@@ -38,16 +39,13 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
 
-  // left-side (page reactive) links under logo
+  /* ---------------- Config ---------------- */
+
   const leftConfig = useMemo(() => {
     const path = router.pathname;
 
-    // HOME: blank left side (Work moves to right)
-    if (path === "/") {
-      return { links: [], cta: null };
-    }
+    if (path === "/") return { links: [], cta: null };
 
-    // Resume: anchors + download
     if (path === "/resume") {
       return {
         links: [
@@ -65,11 +63,9 @@ function Navbar() {
       };
     }
 
-    // default: nothing special on left (keep clean)
     return { links: [], cta: null };
   }, [router.pathname]);
 
-  // right-side links (always shown). On HOME include Work here too.
   const rightConfig = useMemo(() => {
     const base = [{ label: "Home", href: "/", type: "route" }];
 
@@ -77,7 +73,13 @@ function Navbar() {
       base.push({ label: "Work", href: "/work", type: "route" });
     }
 
-    base.push({ label: "Contact", href: "/contact", type: "route", variant: "button" });
+    base.push({
+      label: "Contact",
+      href: "/contact",
+      type: "route",
+      variant: "button",
+    });
+
     return base;
   }, [router.pathname]);
 
@@ -108,145 +110,126 @@ function Navbar() {
   return (
     <nav
       className={[
-        "sticky w-full z-50 transition-all duration-200",
-        visible ? "top-0" : "-top-40",
+        "sticky z-50 transition-all duration-200",
+        visible ? "top-0" : "-top-32",
       ].join(" ")}
     >
-      {/* blur/opacity vibe */}
-      <div className="bg-[#0C0D1C]/60 backdrop-blur-md border-b border-gruvpink/20">
-        <div className="w-full px-4 2xl:px-16 pt-8 pb-6 md:pt-10 md:pb-8">
-          {/* Row 1: logo + mobile icon */}
-          <div className="flex items-start justify-between">
+      {/* NAV BAR */}
+      <div
+        className={[
+          "w-screen transition-colors duration-300",
+          scrolled
+            ? "bg-[#0C0D1C]/40 backdrop-blur-md border-b border-gruvpink/20"
+            : "bg-transparent border-b border-transparent",
+        ].join(" ")}
+      >
+        <div className="mx-auto max-w-[1600px] px-4 2xl:px-16">
+          {/* TOP ROW */}
+          <div className="flex items-center justify-between min-h-[96px]">
             <Link href="/" onClick={() => setMenuOpen(false)}>
-              <Image
-                src={staticLogo}
-                alt="logo"
-                className="cursor-pointer"
-                width={140}
-                height={44}
-                priority
-              />
+              <div className="relative h-32 w-32 md:h-32 md:w-32 flex-shrink-0">
+                <Image
+                  src={staticLogo}
+                  alt="logo"
+                  priority
+                  fill
+                  className="object-contain cursor-pointer"
+                />
+              </div>
             </Link>
 
+            {/* Hamburger */}
             <div className="sm:hidden">
-              <button onClick={handleNav} className="cursor-pointer">
-                <AiOutlineMenu size={25} color="#E95584" />
+              <button
+                onClick={handleNav}
+                className="p-2 rounded-md active:scale-95 transition"
+                aria-label="Open menu"
+              >
+                <AiOutlineMenu size={24} color="#E95584" />
               </button>
             </div>
           </div>
 
-          {/* Row 2: ONE line under logo: left (reactive) + right (global) */}
-          <div className="hidden sm:flex items-center justify-between mt-3">
-            {/* left (reactive) */}
-            <div className="flex items-center gap-4 min-h-[28px]">
+          {/* Desktop links */}
+          <div className="hidden sm:flex items-center justify-between pb-4">
+            <div className="flex items-center gap-4">
               {leftConfig.links.map(renderLink)}
-
-              {leftConfig.cta?.type === "download" ? (
+              {leftConfig.cta?.type === "download" && (
                 <a
                   href={leftConfig.cta.href}
                   download
-                  className="ml-2 text-xs md:text-sm py-1 px-3 rounded-md border border-gruvpink/80 text-gruvpink hover:bg-gruvpink hover:text-[#0C0D1C] transition"
+                  className="ml-2 text-xs py-1 px-3 rounded-md border border-gruvpink/80 text-gruvpink hover:bg-gruvpink hover:text-[#0C0D1C] transition"
                 >
                   {leftConfig.cta.label}
                 </a>
-              ) : null}
+              )}
             </div>
 
-            {/* right (global) */}
             <div className="flex items-center gap-4">
-              {rightConfig.map((item) => {
-                if (item.variant === "button") {
-                  return (
-                    <Link key={item.href} href={item.href}>
-                      <span className="text-xs md:text-sm py-1 px-3 rounded-md border border-gruvpink/80 text-gruvpink hover:bg-gruvpink hover:text-[#0C0D1C] transition cursor-pointer">
-                        {item.label}
-                      </span>
-                    </Link>
-                  );
-                }
-                return renderLink(item);
-              })}
+              {rightConfig.map((item) =>
+                item.variant === "button" ? (
+                  <Link key={item.href} href={item.href}>
+                    <span className="text-xs py-1 px-3 rounded-md border border-gruvpink/80 text-gruvpink hover:bg-gruvpink hover:text-[#0C0D1C] transition cursor-pointer">
+                      {item.label}
+                    </span>
+                  </Link>
+                ) : (
+                  renderLink(item)
+                )
+              )}
             </div>
           </div>
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* MOBILE MENU */}
       <div
-        className={
-          menuOpen
-            ? "fixed left-0 top-0 w-[100%] sm:hidden h-screen bg-gray-900/70 backdrop-blur-sm p-10 ease-in duration-500 z-50"
-            : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
-        }
+        className={`fixed inset-0 sm:hidden z-[60] transition ${
+          menuOpen ? "pointer-events-auto" : "pointer-events-none"
+        }`}
       >
-        <div className="flex w-full items-center justify-end">
-          <button onClick={handleNav} className="cursor-pointer">
-            <AiOutlineClose size={20} color="#E95584" />
-          </button>
-        </div>
+        {/* Backdrop */}
+        <div
+          className={`absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${
+            menuOpen ? "opacity-100" : "opacity-0"
+          }`}
+          onClick={() => setMenuOpen(false)}
+        />
 
-        <div className="flex-col items-center text-center text-5xl py-4 text-gruvred">
-          <ul className="space-y-8">
-            <li className="hover:border-b border-gruvgreen pb-3">
-              <Link href="/" onClick={() => setMenuOpen(false)}>
-                Home
-              </Link>
-            </li>
+        {/* Bottom sheet */}
+        <div
+          className={`absolute bottom-0 left-0 right-0 bg-[#0C0D1C] rounded-t-2xl p-6 pb-10 transform transition-transform duration-300 ${
+            menuOpen ? "translate-y-0" : "translate-y-full"
+          }`}
+        >
+          <div className="flex items-center justify-between mb-6">
+            <div className="mx-auto h-1.5 w-12 rounded-full bg-gruvpink/40" />
+            <button
+              onClick={() => setMenuOpen(false)}
+              className="absolute right-5 top-5"
+              aria-label="Close menu"
+            >
+              <AiOutlineClose size={20} color="#E95584" />
+            </button>
+          </div>
 
-            <li className="hover:border-b border-gruvgreen pb-3">
-              <Link href="/work" onClick={() => setMenuOpen(false)}>
-                Work
-              </Link>
-            </li>
-
-            {router.pathname === "/resume" ? (
-              <>
-                <li className="hover:border-b border-gruvgreen pb-3">
-                  <a href="#skills" onClick={() => setMenuOpen(false)}>
-                    Skills
-                  </a>
-                </li>
-                <li className="hover:border-b border-gruvgreen pb-3">
-                  <a href="#experience" onClick={() => setMenuOpen(false)}>
-                    Work
-                  </a>
-                </li>
-                <li className="hover:border-b border-gruvgreen pb-3">
-                  <a href="#projects" onClick={() => setMenuOpen(false)}>
-                    Projects
-                  </a>
-                </li>
-                <li className="pt-6">
-                  <a
-                    href="/ArturoVillalobosResume.pdf"
-                    download
-                    onClick={() => setMenuOpen(false)}
-                    className="inline-block text-lg py-2 px-6 rounded-md border border-gruvpink text-gruvpink hover:bg-gruvpink hover:text-[#0C0D1C] transition"
-                  >
-                    Download
-                  </a>
-                </li>
-              </>
-            ) : null}
-
-            <li className="hover:border-b border-gruvgreen pb-3">
-              <Link href="/contact" onClick={() => setMenuOpen(false)}>
-                Contact
-              </Link>
-            </li>
+          <ul className="space-y-4 text-lg text-gruvpink">
+            <li><Link href="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+            <li><Link href="/work" onClick={() => setMenuOpen(false)}>Work</Link></li>
+            <li><Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
           </ul>
-        </div>
 
-        <div className="flex flex-row justify-around pt-52 items-center">
-          <a href="https://www.linkedin.com/in/rtvro/" target="_blank" rel="noreferrer">
-            <AiOutlineLinkedin size={40} className="cursor-pointer" color="#F12F26" />
-          </a>
-          <a href="https://github.com/arturovilla" target="_blank" rel="noreferrer">
-            <AiOutlineGithub size={40} className="cursor-pointer" color="#F12F26" />
-          </a>
-          <a href={`mailto:${email}`}>
-            <AiOutlineMail size={40} className="cursor-pointer" color="#F12F26" />
-          </a>
+          <div className="mt-10 flex justify-around">
+            <a href="https://www.linkedin.com/in/rtvro/" target="_blank" rel="noreferrer">
+              <AiOutlineLinkedin size={26} color="#f5c2e7" />
+            </a>
+            <a href="https://github.com/arturovilla" target="_blank" rel="noreferrer">
+              <AiOutlineGithub size={26} color="#f5c2e7" />
+            </a>
+            <a href={`mailto:${email}`}>
+              <AiOutlineMail size={26} color="#f5c2e7" />
+            </a>
+          </div>
         </div>
       </div>
     </nav>

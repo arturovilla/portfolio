@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 * {
 	scrollbar-width: thin;
 	scrollbar-color: #fff, #0c0d1c;
@@ -26,4 +34,42 @@
 ::selection {
 	color: #000000de;
 	background: #ef1884c3;
+}
+
+.prose table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  border-collapse: collapse;
+}
+
+.prose thead,
+.prose tbody,
+.prose tr {
+  display: block;
+  width: 100%;
+}
+
+.prose th,
+.prose td {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+.prose th img,
+.prose td img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* captions */
+.prose td em {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  opacity: 0.75;
 }

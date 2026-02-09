@@ -20,16 +20,16 @@ module.exports = {
         "gp-line": ["var(--font-geist-pixel-line)"],
 			},
 			colors: {
-				gruvred: "#F12F26",
-				gruvtan: "#F7E2BF",
-				gruvpink: "#EF5787",
-				gruvmute: "#918175",
-				gruvblue: "#5A92C4",
-				gruvgreen: "#94B736",
-				gruvpurple: "#C37CC1",
-				gruvbold: "#FEA090",
-				gruvline: "#801914",
-				gruvborder: "#C0476C",
+			gruvred:    "#f5e0dc", // Rosewater – soft light accent / highlights
+      gruvtan:    "#f2cdcd", // Flamingo – warm neutral
+      gruvpink:   "#f5c2e7", // Pink – primary pink accent
+      gruvmute:   "#a6adc8", // Subtext 0 – muted text / secondary
+      gruvblue:   "#89dceb", // Sky – bright cyan-blue
+      gruvgreen: "#a6e3a1", // Green – success / positive
+      gruvpurple:"#cba6f7", // Mauve – primary purple
+      gruvbold:  "#fab387", // Peach – bold / attention-grabbing
+      gruvline:  "#313244", // Surface 0 – dividers / lines
+      gruvborder:"#45475a", // Surface 1 – borders / containers
 			},
 			typography: ({ theme }) => ({
 				pink: {
