@@ -67,7 +67,7 @@ function About() {
 									CORE STACK
 								</h2>
 								<p className="mt-2 text-gruvgreen text-sm md:text-base">
-									Java, Python, C#, TypeScript, SQL, Docker, Ansible, Azure DevOps
+									Java, Python, C#, Swift, TypeScript, SQL, Docker, Ansible, Azure DevOps
 								</p>
 							</div>
 							<div>
@@ -89,6 +89,31 @@ function About() {
 								RECENT HIGHLIGHTS
 							</h2>
               <ul className="mt-3 list-disc pl-6 text-gruvtan text-sm md:text-base space-y-2">
+                <li className="!list-none -ml-6 mb-3">
+                  <a href="https://lidarota.app" target="_blank" rel="noreferrer" className="block border border-gruvgreen/40 rounded-md p-3 bg-gruvgreen/5 backdrop-blur-sm hover:border-gruvgreen hover:bg-gruvgreen/10 transition-all cursor-pointer">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-[10px] font-gp-square tracking-widest bg-gruvgreen/20 text-gruvgreen px-2 py-0.5 rounded-full uppercase">
+                        New App
+                      </span>
+                      <span className="font-gp-square text-gruvgreen text-base md:text-lg">
+                        LOTA
+                      </span>
+                      <span className="text-gruvtan/60 text-xs font-gp-square">
+                        — LiDAR Over The Air
+                      </span>
+                    </div>
+                    <p className="text-gruvtan text-sm leading-relaxed">
+                      An iOS app that turns your iPhone into a spatial capture tool, streaming LiDAR depth,
+                      point clouds, and camera tracking over{" "}
+                      <span className="text-gruvpink">NDI</span>,{" "}
+                      <span className="text-gruvpink">OSC</span>, and{" "}
+                      <span className="text-gruvpink">TCP/UDP</span>{" "}
+                      to TouchDesigner, OBS, and beyond. Exports{" "}
+                      <span className="text-gruvgreen">COLMAP-ready Gaussian Splat datasets</span> and{" "}
+                      <span className="text-gruvgreen">.PLY point clouds</span> straight from your pocket.
+                    </p>
+                  </a>
+                </li>
                 <li>
                   Release a new series on on strange attractors that you can view <a
                   href="https://www.reddit.com/r/TouchDesigner/comments/1qtr5wp/attractor_series/"
