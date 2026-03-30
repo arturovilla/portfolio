@@ -63,6 +63,19 @@ function Navbar() {
       };
     }
 
+    if (path === "/googlesubmission") {
+      return {
+        links: [
+          { label: "Top", href: "#top", type: "hash" },
+          { label: "Visual", href: "#visual", type: "hash" },
+          { label: "Engineering", href: "#engineering", type: "hash" },
+          { label: "3D", href: "#3d", type: "hash" },
+          { label: "Links", href: "#links", type: "hash" },
+        ],
+        cta: null,
+      };
+    }
+
     return { links: [], cta: null };
   }, [router.pathname]);
 
@@ -72,6 +85,8 @@ function Navbar() {
     if (router.pathname === "/") {
       base.push({ label: "Work", href: "/work", type: "route" });
     }
+
+    base.push({ label: "Google Fellowship", href: "/googlesubmission", type: "route" });
 
     base.push({
       label: "Contact",
@@ -216,6 +231,7 @@ function Navbar() {
           <ul className="space-y-4 text-lg text-gruvpink">
             <li><Link href="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
             <li><Link href="/work" onClick={() => setMenuOpen(false)}>Work</Link></li>
+            <li><Link href="/googlesubmission" onClick={() => setMenuOpen(false)}>Google Fellowship</Link></li>
             <li><Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
           </ul>
 

@@ -354,7 +354,32 @@ function Resume() {
 					<Card>
 						<SectionTitle id="projects">PROJECTS</SectionTitle>
 
-						<div className="mt-4">
+						<div className="mt-4 space-y-6">
+							<div>
+								<RoleHeader
+									title="LOTA — LiDAR Over The Air"
+									companyName="LOTA"
+									companyUrl="https://lidarota.app"
+									location="• Houston, TX"
+									dates="2025 – Present"
+								/>
+								<ul className="mt-3 list-disc pl-6 text-sm md:text-base text-gruvtan/85 space-y-2">
+									<li>
+									Built an iOS application that turns consumer iPhones into professional-grade spatial capture devices by leveraging LiDAR, camera arrays, and motion sensors for creative, 3D, and generative visual workflows.
+									</li>
+									<li>
+									Engineered real-time streaming support for RGB, depth, and point cloud data over NDI, TCP/UDP, OSC, and PLY pipelines, enabling interoperability with TouchDesigner, OBS, vMix, Resolume, and custom downstream tools.
+									</li>
+									<li>
+									Created a Gaussian splat capture pipeline that exports posed imagery, ARKit camera parameters, and LiDAR point clouds as COLMAP-compatible binaries for training workflows in OpenSplat, Nerfstudio, and gsplat.
+									</li>
+									<li>
+									Implemented customizable spatial visualization and export features, including real-time point cloud rendering, depth colormaps, iCloud-integrated dataset export, and PLY outputs for common 3D tools such as Blender and MeshLab.
+									</li>
+								</ul>
+							</div>
+
+							<div>
 							<RoleHeader
 								title="Creative Developer"
 								companyName="Art Club"
@@ -372,6 +397,7 @@ function Resume() {
 								reliability and minimal downtime.
 								</li>
 							</ul>
+							</div>
 						</div>
 					</Card>
 				</main>
