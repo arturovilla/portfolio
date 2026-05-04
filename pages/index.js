@@ -11,6 +11,7 @@ export default function Home() {
 			<div className="mt-64">
 				<About />
 			</div>
+			<Newsletter />
 		</div>
 	);
 }

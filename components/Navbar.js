@@ -139,48 +139,37 @@ function Navbar() {
         ].join(" ")}
       >
         <div className="mx-auto max-w-[1600px] px-4 2xl:px-16">
-          {/* TOP ROW */}
-          <div className="flex items-center justify-between min-h-[96px]">
-            <Link href="/" onClick={() => setMenuOpen(false)}>
-              <div className="relative h-32 w-32 md:h-32 md:w-32 flex-shrink-0">
-                <Image
-                  src={staticLogo}
-                  alt="logo"
-                  priority
-                  fill
-                  className="object-contain cursor-pointer"
-                />
+          <div className="flex items-center justify-between gap-6 min-h-[96px]">
+            {/* Logo + left links */}
+            <div className="flex items-center gap-6">
+              <Link href="/" onClick={() => setMenuOpen(false)}>
+                <div className="relative h-20 w-20 md:h-24 md:w-24 flex-shrink-0">
+                  <Image
+                    src={staticLogo}
+                    alt="logo"
+                    priority
+                    fill
+                    className="object-contain cursor-pointer"
+                  />
+                </div>
+              </Link>
+
+              <div className="hidden sm:flex items-center gap-4">
+                {leftConfig.links.map(renderLink)}
+                {leftConfig.cta?.type === "download" && (
+                  <a
+                    href={leftConfig.cta.href}
+                    download
+                    className="ml-2 text-xs py-1 px-3 rounded-md border border-gruvpink/80 text-gruvpink hover:bg-gruvpink hover:text-[#0C0D1C] transition"
+                  >
+                    {leftConfig.cta.label}
+                  </a>
+                )}
               </div>
-            </Link>
-
-            {/* Hamburger */}
-            <div className="sm:hidden">
-              <button
-                onClick={handleNav}
-                className="p-2 rounded-md active:scale-95 transition"
-                aria-label="Open menu"
-              >
-                <AiOutlineMenu size={24} color="#E95584" />
-              </button>
-            </div>
-          </div>
-
-          {/* Desktop links */}
-          <div className="hidden sm:flex items-center justify-between pb-4">
-            <div className="flex items-center gap-4">
-              {leftConfig.links.map(renderLink)}
-              {leftConfig.cta?.type === "download" && (
-                <a
-                  href={leftConfig.cta.href}
-                  download
-                  className="ml-2 text-xs py-1 px-3 rounded-md border border-gruvpink/80 text-gruvpink hover:bg-gruvpink hover:text-[#0C0D1C] transition"
-                >
-                  {leftConfig.cta.label}
-                </a>
-              )}
             </div>
 
-            <div className="flex items-center gap-4">
+            {/* Right links (desktop) */}
+            <div className="hidden sm:flex items-center gap-4">
               {rightConfig.map((item) =>
                 item.variant === "button" ? (
                   <Link key={item.href} href={item.href}>
@@ -192,6 +181,17 @@ function Navbar() {
                   renderLink(item)
                 )
               )}
+            </div>
+
+            {/* Hamburger (mobile) */}
+            <div className="sm:hidden">
+              <button
+                onClick={handleNav}
+                className="p-2 rounded-md active:scale-95 transition"
+                aria-label="Open menu"
+              >
+                <AiOutlineMenu size={24} color="#E95584" />
+              </button>
             </div>
           </div>
         </div>
