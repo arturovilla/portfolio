@@ -32,7 +32,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-gruvmute leading-relaxed">
-              Senior Software Engineer & creative coder.
+              Software Engineer & creative coder.
               <br />
               Backend, data pipelines, and the occasional strange attractor.
             </p>

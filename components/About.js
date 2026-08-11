@@ -29,17 +29,16 @@ function About() {
 						{/* Top line */}
 						<div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
 							<div className="font-gp-square text-gruvgreen text-lg md:text-2xl">
-								Senior Software Engineer{" "}
+								Software Engineer{" "}
 								<span className="text-gruvtan">@</span>{" "}
 								<a
-									href="https://standarddata.ai/en/welcome-to-standarddata"
+									href="https://libertyenergy.com"
 									target="_blank"
 									rel="noreferrer"
 									className="text-gruvpink hover:text-gray-100 transition-all"
 								>
-									StandardData&#8599;
+									Liberty Energy&#8599;
 								</a>
-								<span className="text-gruvtan"> • Houston, TX</span>
 							</div>
 
 							<div className="flex gap-3">
